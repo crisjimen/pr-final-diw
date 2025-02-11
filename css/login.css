@@ -1,0 +1,239 @@
+@import url('./global.css');
+
+/*Login page*/
+body, html{
+    overflow: hidden;
+}
+
+.login{
+    display: flex;
+    background-color: var(--second-bg-color);
+    flex-direction: row;
+}
+
+.main-img{
+    height: 100vh;
+}
+
+.login__main{
+    display: flex;
+    width: 533px;
+    height: 572px;
+    padding: 7px 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+    align-self: center;
+    justify-self: center;
+    margin-top: 3%;
+    margin-left: 9%;
+}
+
+.login__main h2{
+    font-size: 26px;
+    margin: 0;
+    text-align: left;
+    width: 411px;
+}
+
+.title-1{
+    color: var(--main-color);
+    font-weight: 800;
+    line-height: 25px;
+}
+
+.welc-desc{
+    color: var(--section-5);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+    width: 411px;
+    text-align: left;
+    margin: 0;
+}
+
+.login__main-buttons{
+    display: flex;
+    width: 485px;
+    padding: 0px 6px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.login__main-buttons div{
+    color: var(--section-4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    height: 50px;
+    gap:12px;
+
+    border: 0.5px solid var(--section-4);
+    border-radius: 5px;
+}
+
+.login__main-buttons div i{
+    font-size: 25px;
+}
+
+.login__main-buttons div a{
+    text-decoration: none;
+    color: var(--section-4);
+    font-weight:700;
+}
+
+.login__main-buttons div:hover{
+    cursor: pointer;
+}
+
+.line{
+    width: 153px;
+    height: 2px;
+    background-color: var(--section-3);
+}
+
+.login__main-or{
+    display: flex;
+    flex-direction: row;
+    color: var(--section-3);
+    text-align: center;
+    font-size: 13px;
+    align-items: center;
+    gap: 3px;
+    justify-content: center;
+}
+
+.login__main-input input{
+    border-radius: 5px;
+    border: 0.5px solid #828282;
+    width: 340px;
+    padding: 13px 40px;
+    font-family: 'Inter';
+    outline: none;
+}
+
+.login__main-input input:focus{
+    outline: 2px solid var(--section-5);
+}
+
+.input-container i{
+    position: absolute;
+    transform: translate(10px,45%);
+    font-size: 22px;
+    color: var(--section-5);
+    opacity: 60%;
+}
+
+.login__main-input {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rem-passwd{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 35px;
+}
+
+.remember-tag{
+    font-size: 12px;
+    color: var(--section-5);
+}
+
+.forgot{
+    font-size: 12px;
+    color: var(--section-4);
+    text-decoration: none;
+    transition: border-bottom linear 0.3s ease-in-out;
+}
+
+.forgot:hover{
+    border-bottom: 1px solid var(--section-4);
+}
+
+.rem-group{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btnLogin{
+    background-color: #AAFA12;
+    width: 413px;
+    padding: 13px 0;
+    border: 0;
+    border-radius: 2px;
+    font-family: 'Inter';
+    font-size: 17px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.login__main-button{
+    display: flex;
+    justify-content: center;
+}
+
+.login__main-register{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    line-height: 10px;
+}
+
+.login__main-register p{
+    font-size: 12px;
+}
+
+.login__main-register a{
+    color: #AAFA12;
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.login__green-frame{
+    width: 66px;
+    height: 411px;
+    background-color: var(--main-color);
+    position: fixed;
+    top: 22.5%;
+    left: 100vh;
+}
+
+#remember{
+    accent-color: var(--main-color);
+} 
+
+/*MEDIA QUERIES*/
+@media (max-width: 768px) {  
+    body,html{
+        overflow: auto;
+    }
+
+    .login{
+        flex-direction: column;
+    } 
+
+    .login__green-frame{
+        display: none;
+    }
+
+    .main-img{
+        object-fit:cover;
+        width: 100%;
+        margin-top: -75%;
+    }
+
+
+    .login__img{
+        flex: -1;
+    }
+}

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{
+    --bg-color:#FFFFFF;
+    --main-color:#AAFA12;
+    --second-bg-color:#F7F7F7;
+    --second-main-color:#1F1F1F;
+    --section-2:#EDEDEE;
+    --section-3:#D5D5D5;
+    --section-4:#5C5C5C;
+    --section-5:#828282;
+}
+
+/*LOGIN SECTION */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
