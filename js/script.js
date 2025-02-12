@@ -1,5 +1,5 @@
 window.onload = () => {
-    const link = document.querySelector("a[href='register1.html']");
+    const link = document.querySelector("a[href='register.html']");
     
     if (link) {
         link.addEventListener("click", (event) => {
@@ -8,7 +8,7 @@ window.onload = () => {
             document.body.style.opacity = 0;
 
             setTimeout(() => {
-                window.location.href = 'register1.html';
+                window.location.href = 'register.html';
             }, 500);
         });
 
@@ -68,5 +68,27 @@ navLinks.forEach(navLink => {
     
 });
 });
+
+//Función para que los botones de 'next' lleven a la siguiente sección
+const btn1 = document.querySelector('.btnNext:nth-of-type(1) button');
+btn1.addEventListener('click', (e) => {
+    forms[0].style.display='none';
+    forms[1].style.display='flex';
+    forms[2].style.display='none';
+
+    navLinks.forEach(link => link.classList.remove('selected'));
+    navLinks[1].classList.add('selected');
+}); 
+
+const btn2 = document.querySelector('#btn2 button');
+btn2.addEventListener('click', (e) => {
+    forms[1].style.display='none';
+    forms[2].style.display='flex';
+
+    navLinks[1].classList.remove('selected');
+    navLinks[2].classList.add('selected')
+})
+
+
 
 

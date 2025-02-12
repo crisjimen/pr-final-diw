@@ -1,5 +1,9 @@
 @import url('./global.css');
 
+body,html{
+    overflow: hidden;
+}
+
 .logo{
     background-color: black;
 }
@@ -90,7 +94,7 @@
     border: 1px solid var(--section-3);
     background-color: var(--section-2);
     border-radius: 5px;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .form__main-basic, .form__main-account{
@@ -113,8 +117,9 @@
 .form__main-inputs{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 8px;
     padding: 1rem;
+    padding-left: 3rem;
     flex-direction: column;
 }
 
@@ -126,9 +131,9 @@
 
 .input-group input, .input-group select{
     border: 1px solid var(--section-3);
-    padding: 8px 5px;
+    padding: 6px 8px;
     border-radius: 4px;
-    width: 40vh;
+    width: 30vh;
     font-family: 'Inter';
 }
 
@@ -290,4 +295,58 @@
 
 .btnRegister{
     padding: 10px 70px;
+}
+
+.payment-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--second-bg-color);
+    width: 185px;
+    padding: 15px 5px;
+    border: 0.5px solid #828282;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    color: #828282;
+}
+
+
+.payment-box i{
+    font-size: 30px;
+    color: inherit;
+}
+
+.boxes{
+    gap: 15px;
+}
+
+.col h3{
+    font-size: 15px;
+    color: #828282;
+    font-weight: 400;
+    margin: 0.5rem;
+}
+
+.col h3 span{
+    font-weight: bold;
+    color: var(--second-main-color);
+}
+
+.payment-box h3{
+    font-size: 13px;
+    font-weight: bold;
+    color: inherit;
+}
+
+.payment-box:hover{
+    background-color: #828282;
+    color: white;
+}
+
+label{
+    font-size: 15px;
+}
+
+#col-boxes{
+    gap: 15px;
 }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register - One Goal</title>
     <link rel="stylesheet" href="css/register.css">
-    <link rel="icon" href="./img/icon.jpg">
+    <link rel="icon" href="./img/futbol-regular (1).svg">
     <script src="https://kit.fontawesome.com/7c1613023d.js" crossorigin="anonymous"></script>
     
 </head>
@@ -123,7 +123,7 @@ Identification</h2>
                                 </div>
 
                                 <div class="input-group">
-                                    <label for="rpasswd">Repear password <span>*</span>:</label>
+                                    <label for="rpasswd">Repeat password <span>*</span>:</label>
                                     <input type="password" name="rpsswd">
 
                                     <div class="btnNext">
@@ -208,7 +208,7 @@ Identification</h2>
                                     <label for="postcode">Postcode <span>*</span>:</label>
                                     <input type="text" name="postcode">
 
-                                    <div class="btnNext">
+                                    <div class="btnNext" id="btn2">
                                         <button>Next </button>
                                     </div>
                                 </div> 
@@ -231,30 +231,25 @@ Identification</h2>
 
                         <div class="form__main-inputs">
 
-                            <div class="row">
-                                <div class="input-group">
-                                    <label for="id">Identification Type <span>*</span>:</label>
-                                    <select name="id">
-                                        <option value="dni">DNI</option>
-                                        <option value="nif">NIF</option>
-                                    </select>
-                                </div>
+                            <div class="col" id="col-boxes">
+                                <h3>Choose your preferred <span>payment method</span></h3>
+                                <div class="row boxes">
+                                    <div class="payment-box">
+                                        <i class="fa-regular fa-credit-card"></i>
+                                        <h3>Credit / Debt Card</h3>
+                                    </div>
 
-                                <p class="id-warning">
-                                    <span>⚠️ Important:</span> Please ensure that all personal 
-                                    details entered match exactly with 
-                                    your official documents. Any discrepancies may 
-                                    delay verification.
-                                </p>
-                            </div>
-                            
-                            <div class="row">
-                                <div class="input-group">
-                                    <label for="idnum">Identification Number: <span>*</span>:</label>
-                                    <input type="text" name="idnum">
+                                    <div class="payment-box">
+                                        <i class="fa-brands fa-paypal"></i>
+                                        <h3>PayPal</h3>
+                                    </div>
+
+                                    <div class="payment-box">
+                                        <i class="fa-brands fa-apple-pay"></i>
+                                        <h3>Apple Pay</h3>
+                                    </div>
                                 </div>
                             </div>
-                            
                            
                         </div>
                     </div>
