@@ -1,0 +1,220 @@
+@import url('./global.css');
+
+.logo{
+    background-color: black;
+}
+
+.register{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.bg-img{
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    height: 20%;
+    z-index: -1;
+}
+
+.logo{
+    position: absolute;
+    top: 12%;
+    height: 10%;
+    left: 37%;
+
+}
+
+.register__main{
+    background-color: var(--second-bg-color);
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 45px;
+    height: 90vh;
+}
+
+.main__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.main__title h2{
+    margin: 0.75rem 0;
+}
+
+.cmnty{
+    color: var(--main-color);
+    white-space:pre;
+    text-align: right;
+    line-height: 3.5vh;
+    font-size: 26px;
+    margin: 15px 0;
+}
+
+.main__form{
+    display: flex;
+    gap: 40px;
+}
+
+.form__sidebar{
+    color: var(--section-3);
+    font-size: 15px;
+    white-space: pre;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form__sidebar h2{
+    margin: 0.4em 0;
+}
+
+.selected{
+    color: var(--main-color);
+    font-weight: 800;
+}
+
+.form__main{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    border: 1px solid var(--section-3);
+    background-color: var(--section-2);
+    border-radius: 5px;
+    padding: 15px 0;
+}
+
+.form__main-basic, .form__main-account{
+    display: flex;
+    align-items: flex-start;
+}
+
+.form__main-title{
+    padding: 0 35vh 0 7vh;
+    border-right: 1px solid var(--section-3);
+    height: 90%;
+}
+
+.form__main-title h2{
+    padding-top: 10px;
+    font-weight: 400;
+}
+
+.form__main-inputs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input-group input{
+    border: 1px solid var(--section-3);
+    padding: 8px 5px;
+    border-radius: 4px;
+    width: 40vh;
+    font-family: 'Inter';
+}
+
+.input-group input:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px var(--section-3);
+    border: 1px solid var(--section-3); 
+}
+
+.row{
+    display: flex;
+    gap: 30px;
+}
+
+.input-group span, .form-group span{
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.form-group{
+    display: flex;
+    gap: 30px;
+}
+
+.gender-options{
+    display: flex;
+    gap: 10px;
+}
+
+.gender-options input{
+    accent-color: var(--main-color);
+}
+
+.password-rules{
+    font-size: 11px;
+    padding: 0 15px;
+    color: var(--section-4);
+
+}
+
+.btnNext{
+    align-self: self-end;
+}
+
+.btnNext button {
+    padding: 12px 40px;
+    margin-top: 15px;
+    border: 1px solid var(--section-4); 
+    background-color: transparent;
+    color: var(--section-4);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btnNext button:hover {
+    border-color: var(--main-color);
+    background-color: var(--main-color);
+    color: var(--second-main-color); 
+    font-weight: 800;
+    box-shadow: 0px 4px 10px rgba(170, 250, 18, 0.3); /* Efecto de sombra */
+}
+
+
+.btnNext button:active {
+    transform: scale(0.95);
+}
+
+.back-link{
+    color: var(--section-4);
+}
+
+.back-link:hover{
+    color: var(--second-main-color);
+}
+
+.cursor{
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: rgba(170, 250, 18, 0.5); 
+    border-radius: 50%;
+    pointer-events: none; 
+    box-shadow: 0 0 20px 10px rgba(170, 250, 18, 0.3); 
+    transform: translate(-50%, -50%);
+    transition: transform 0.05s ease-in-out;
+    z-index: 100;
+    
+}

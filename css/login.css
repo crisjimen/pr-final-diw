@@ -208,12 +208,15 @@ body, html{
     font-size: 17px;
     font-weight: 600;
     color: #FFFFFF;
+    transition: all 0.3s ease-in-out;
 
 }
 
 .btnLogin:hover{
     cursor: pointer;
-    background: linear-gradient(to bottom, var(--main-color), var(--section-3));
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
 }
 
 .login__main-button{
