@@ -73,7 +73,9 @@
 
 .form__sidebar h2{
     margin: 0.4em 0;
+    cursor: pointer;
 }
+
 
 .selected{
     color: var(--main-color);
@@ -97,8 +99,9 @@
 }
 
 .form__main-title{
-    padding: 0 35vh 0 7vh;
-    border-right: 1px solid var(--section-3);
+    width: 35%;
+    padding-left: 10vh;
+    border-right: 1px solid var(--section-4);
     height: 90%;
 }
 
@@ -121,12 +124,16 @@
     gap: 0.5rem;
 }
 
-.input-group input{
+.input-group input, .input-group select{
     border: 1px solid var(--section-3);
     padding: 8px 5px;
     border-radius: 4px;
     width: 40vh;
     font-family: 'Inter';
+}
+
+.input-group select{
+    width: 20vh;
 }
 
 .input-group input:focus{
@@ -159,18 +166,33 @@
     accent-color: var(--main-color);
 }
 
-.password-rules{
+.password-rules, .id-warning{
     font-size: 11px;
     padding: 0 15px;
     color: var(--section-4);
+}
 
+.id-warning span{
+    font-size: 15px;
+    color: rgb(56, 189, 8);
+}
+
+.id-warning{
+    text-align: justify;
+    white-space:pre;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.row:nth-of-type(1){
+    align-items: center;
 }
 
 .btnNext{
     align-self: self-end;
 }
 
-.btnNext button {
+.btnNext button, .btnRegister{
     padding: 12px 40px;
     margin-top: 15px;
     border: 1px solid var(--section-4); 
@@ -184,7 +206,7 @@
     transition: all 0.3s ease-in-out;
 }
 
-.btnNext button:hover {
+.btnNext button:hover , .btnRegister:hover{
     border-color: var(--main-color);
     background-color: var(--main-color);
     color: var(--second-main-color); 
@@ -193,7 +215,7 @@
 }
 
 
-.btnNext button:active {
+.btnNext button:active, .btnRegister:active{
     transform: scale(0.95);
 }
 
@@ -217,4 +239,55 @@
     transition: transform 0.05s ease-in-out;
     z-index: 100;
     
+}
+
+.active{
+    display: flex;
+}
+
+.no-active{
+    display: none;
+}
+
+
+.form__main-title p{
+    font-size: 12px;
+    color: var(--section-4);
+    white-space: pre-line;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.col p{
+    font-style: italic;
+}
+
+.col p span{
+    font-weight: bold;
+}
+
+.checkgroup{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+.checkgroup label{
+    font-size: 12px;
+}
+
+.checkgroup input[type="checkbox"]{
+    accent-color: var(--main-color);
+}
+
+.checkgroup span{
+    color: rgb(126, 192, 27);
+}
+
+.btnRegister{
+    padding: 10px 70px;
 }

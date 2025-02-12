@@ -45,7 +45,8 @@ Identification</h2>
                     <a href="login.html" class="back-link"><-- Back to login</a>
                 </div>
 
-                <div class="form__main">
+                <!--Primer form-->
+                <div class="form__main" >
 
                     <div class="form__main-basic">
                         <div class="form__main-title">
@@ -131,15 +132,167 @@ Identification</h2>
                                 </div> 
                             </div>
                                   
+                        </div>
+                    </div>
+                </div>
+
+                <!--Segundo form-->
+                <div class="form__main" style="display: none;">
+
+                    <div class="form__main-basic">
+                        <div class="form__main-title">
+                            <h2>Personal Identification</h2>
+                        </div>
+
+                        <div class="form__main-inputs">
+
+                            <div class="row">
+                                <div class="input-group">
+                                    <label for="id">Identification Type <span>*</span>:</label>
+                                    <select name="id">
+                                        <option value="dni">DNI</option>
+                                        <option value="nif">NIF</option>
+                                    </select>
+                                </div>
+
+                                <p class="id-warning">
+                                    <span>⚠️ Important:</span> Please ensure that all personal 
+                                    details entered match exactly with 
+                                    your official documents. Any discrepancies may 
+                                    delay verification.
+                                </p>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="input-group">
+                                    <label for="idnum">Identification Number: <span>*</span>:</label>
+                                    <input type="text" name="idnum">
+                                </div>
+                            </div>
+                            
+                           
+                        </div>
                     </div>
 
-                    
+                    <div class="form__main-account">
+                        <div class="form__main-title">
+                            <h2>Address</h2>
+                        </div>
+
+                        <div class="form__main-inputs">
+
+                            <div class="row">
+                                <div class="input-group">
+                                    <label for="country">Country <span>*</span> :</label>
+                                    <select name="country">
+                                        <option value="Spain" selected>Spain</option>
+                                        <option value="France">France</option>
+                                        <option value="UK">UK</option>
+                                        <option value="Italy">Italy</option>
+                                    </select>
+                                </div>
+
+                                <div class="input-group">
+                                    <label for="city">City <span>*</span>:</label>
+                                    <input type="text" name="city">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="input-group">
+                                    <label for="addr">Address <span>*</span>:</label>
+                                    <input type="text" name="addr" placeholder="Street, Apt./Unit">
+                                </div>
+
+                                <div class="input-group">
+                                    <label for="postcode">Postcode <span>*</span>:</label>
+                                    <input type="text" name="postcode">
+
+                                    <div class="btnNext">
+                                        <button>Next </button>
+                                    </div>
+                                </div> 
+                            </div>
+                                  
+                        </div>
+                    </div>
+                </div>
+
+                <!--Tercer form-->
+                <div class="form__main" style="display: none;">
+
+                    <div class="form__main-basic">
+                        <div class="form__main-title">
+                            <h2>Payment Methods</h2>
+                            <p>Register a default payment method now for faster transactions. 
+                                You can always update or add new payment options 
+                                later in your account settings.</p>
+                        </div>
+
+                        <div class="form__main-inputs">
+
+                            <div class="row">
+                                <div class="input-group">
+                                    <label for="id">Identification Type <span>*</span>:</label>
+                                    <select name="id">
+                                        <option value="dni">DNI</option>
+                                        <option value="nif">NIF</option>
+                                    </select>
+                                </div>
+
+                                <p class="id-warning">
+                                    <span>⚠️ Important:</span> Please ensure that all personal 
+                                    details entered match exactly with 
+                                    your official documents. Any discrepancies may 
+                                    delay verification.
+                                </p>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="input-group">
+                                    <label for="idnum">Identification Number: <span>*</span>:</label>
+                                    <input type="text" name="idnum">
+                                </div>
+                            </div>
+                            
+                           
+                        </div>
+                    </div>
+
+                    <div class="form__main-account">
+                        <div class="form__main-title">
+                            <h2>Security</h2>
+                            <p>By proceeding, you confirm that you meet the eligibility 
+                                requirements and agree to our terms</p>
+                        </div>
+
+                        <div class="form__main-inputs">
+
+                            <div class="col">
+                               <p>Complete the last steps and start enjoying <span>OneGoal</span>!</p>
+                                <div class="checkgroup">
+                                    <label for="t&c"><b>Accept<span> Terms & Conditions</span></b> - Review and agree our platform’s policies</label>
+                                    <input type="checkbox" name="t&c" required>
+                                </div>
+
+                                <div class="checkgroup">
+                                    <label for="resp"><b>Responsible <span>Gaming Commitment</span></b> - Confirm our awareness of responsible gaming practices</label>
+                                    <input type="checkbox" name="resp" required>
+                                </div>
+
+                                <div class="checkgroup">
+                                    <label for="nws"><b>Subscribe to our <span>newsletter</span></b> - To receive the new promotions (optional)</label>
+                                    <input type="checkbox" name="nws">
+                                </div>
+
+                                <input type="submit" value="Register" class="btnRegister">
+                            </div>
+                                  
+                        </div>
+                    </div>
+                </div>
 
             </div>
-
-        </div>
-
-    </div>
 
 </body>
 <script src="js/script.js"></script>
