@@ -1,0 +1,100 @@
+@import url('./global.css');
+
+body{
+    background-color: var(--second-bg-color);
+}
+
+.main{
+    display: flex;
+}
+
+.main__sidebar{
+    max-width: 20%;
+    background-color: var(--section-2);
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5%;
+    font-family: 'Myanmar';
+}
+
+.main__section{
+    background-color: white;
+    width: 80%;
+}
+
+.user__options{
+    display: flex;
+    flex-direction: column;
+}
+
+.fav-teams__title, .suggested__title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fav-teams__title h3, .suggested__title h3{
+    font-size: 15px;
+}
+
+.item-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.item-desc h4, .item-desc p{
+    margin: 0;
+}
+
+.suggested__people-item, .fav-teams__list-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fav-teams{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fav-teams__list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fav-teams__list-item{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* BOTONES BARRA LATERAL*/
+.user__options{
+    align-items: center;
+    gap:7px;
+}
+
+.user__options-button{
+    width: 85%;
+    padding: 12px 0;
+    border: 0;
+    background-color: var(--section-3);
+    text-align: left;
+    text-indent: 8%;
+    border-left: 10px solid var(--main-color);
+    font-size: 16px;
+    border-radius: 3px;
+    
+    transition: all 0.3s linear;
+}
+
+.user__options-button i{
+    font-size: 18px;
+}
+
+.user__options-button:hover{
+    background-color: var(--main-color);
+}
