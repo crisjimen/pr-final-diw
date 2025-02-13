@@ -14,11 +14,18 @@ body,html{
     position: relative;
 }
 
+.register__bg {
+    position: relative;
+    width: 100%;
+    height: 120px; /* Fija la altura */
+    overflow: hidden; /* Evita que la imagen desborde */
+}
+
 .bg-img{
     width: 100%;
     position: absolute;
     object-fit: cover;
-    height: 20%;
+    height: 100%;
     z-index: -1;
 }
 
@@ -32,7 +39,7 @@ body,html{
 
 .register__main{
     background-color: var(--second-bg-color);
-    margin-top: 8%;
+ 
     display: flex;
     flex-direction: column;
     padding: 0 45px;
@@ -349,4 +356,132 @@ label{
 
 #col-boxes{
     gap: 15px;
+}
+
+/* MEDIA QUERIES */
+@media(max-width:768px){
+
+    body{
+        background-color: var(--second-bg-color);
+    }
+
+    body, html{
+        overflow-y: scroll;
+    }
+    .main__title{
+        flex-direction: column-reverse;
+        font-size: 20px;
+        padding-top: 20px;
+    }
+
+    .form__sidebar{
+        display: none;
+    }
+
+    .cmnty{
+        text-align: left;
+        white-space: normal;
+    }
+
+    .logo{
+        position: static;
+        width: 90%;
+    }
+
+    .register__logo{
+        display: flex;
+        justify-content: center;
+        margin-top: -7%;
+    }
+
+    .register__main{
+        padding: 0 35px;
+        height: 100%;
+    }
+
+    .cursor{
+        display: none;
+    }
+
+    .form__main-basic, .form__main-account{
+        flex-direction: column;
+    }
+
+    .form__main-title{
+        padding-left: 0;
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid var(--section-4);
+    }
+
+    .form__main{
+        border: 0;
+        background-color: transparent;
+    }
+
+    .form__main-title h2{
+        padding-top: 0;
+        font-size: 20px;
+    }
+
+    .form__main-inputs{
+        padding: 1rem 0;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .row{
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-group{
+        width: 90%;
+    }
+
+    .btnNext{
+        display: none;
+    }
+
+    .input-group input, .input-group select{
+        width: auto;
+    }
+
+    .form-group{
+        justify-content: center;
+    }
+
+    .form__main:nth-of-type(3),
+    .form__main:nth-of-type(4){
+        display: flex !important;
+    }
+
+    .main__form{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .id-warning {
+        white-space: normal;
+        text-align: left;
+    }
+
+    .col{
+        align-items: center;
+        gap: 15px;
+    }
+
+    .payment-box{
+        width: 220px;
+        padding: 25px 5px;
+    }
+
+    input[type="checkbox"]{
+        transform: scale(1.5);
+    }
+
+    .btnRegister{
+        padding: 15px 70px;
+    }
 }
