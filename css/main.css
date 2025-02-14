@@ -9,17 +9,13 @@ body{
 }
 
 .main__sidebar{
-    max-width: 20%;
-    background-color: var(--section-2);
+    max-width: 16%;
+    background-color: var(--second-bg-color);
     display: flex;
     flex-direction: column;
-    padding: 0 1.5%;
+    padding: 0.5% 1.5%;
+    gap: 2vh;
     font-family: 'Myanmar';
-}
-
-.main__section{
-    background-color: white;
-    width: 80%;
 }
 
 .user__options{
@@ -31,11 +27,25 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between
+    ;font-family: 'Inter';
+    
 }
 
 .fav-teams__title h3, .suggested__title h3{
     font-size: 15px;
+    font-weight: 400;
+}
+
+.suggested__title a, .fav-teams__title a{
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--section-5);
+}
+
+.suggested__title a:hover,
+.fav-teams__title a:hover{
+    text-decoration: underline;
 }
 
 .item-desc{
@@ -46,12 +56,50 @@ body{
 
 .item-desc h4, .item-desc p{
     margin: 0;
+    line-height: 90%;
+    font-family: 'Inter';
+}
+
+.item-desc h4{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.item-desc p{
+    font-size: 12px;
+    color: var(--section-5);
+    font-weight: 300;
+}
+
+.suggested__people{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
 }
 
 .suggested__people-item, .fav-teams__list-item{
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.suggested__people-item{
+    gap: 2vh;
+    padding-left: 1.5vh;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.suggested__people-item img{
+    height: 6.5vh;
+}
+
+.suggested__people-item:hover{
+    scale:calc(1.01);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    
 }
 
 .fav-teams{
@@ -67,8 +115,89 @@ body{
 }
 
 .fav-teams__list-item{
-    border: 1px solid black;
     border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+/*LOGO*/
+.logo-img{
+    background-color: white;
+    padding: 18px 20px;
+    border-radius: 5px;
+}
+
+.logo-img{
+    width: 85%;
+}
+
+/*PERFIL*/
+.user{
+    gap: 2vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.user__profile{
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.user__profile-banner{
+    background-color: var(--section-3);
+    height: 13vh;
+    border-radius:5px ;
+    z-index: 0;
+}
+
+.user__profile-name{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.user__profile-name > h2, p{
+    margin: 0;
+}
+
+.user__profile-name h2{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.user__profile-name p{
+    font-size: 11px;
+    color: var(--section-4);
+}
+
+.user__profile-picture{
+    width: fit-content;/* Centrar la imagen */
+    z-index: 10;
+    align-self: center;
+    margin-top: -6vh;
+}
+
+.user__profile-picture img{
+    width: 12vh;
+}
+
+.user__profile-stats{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -40px;
+    gap: 35%;
+    color: var(--section-4);
+}
+
+.user__profile-stats div{
+    display: flex;
+    flex-direction: column-reverse;
+    font-size:10px;
 }
 
 /* BOTONES BARRA LATERAL*/
@@ -78,23 +207,85 @@ body{
 }
 
 .user__options-button{
-    width: 85%;
-    padding: 12px 0;
+    font-family: 'Myanmar';
+    width: 95%;
+    white-space: nowrap;
+    padding: 8px 0;
+    color: var(--section-4);
     border: 0;
-    background-color: var(--section-3);
+    background-color: var(--section-2);
     text-align: left;
-    text-indent: 8%;
-    border-left: 10px solid var(--main-color);
-    font-size: 16px;
+    border-left: 5px solid var(--main-color);
+    font-size: 15px;
     border-radius: 3px;
-    
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    line-height: 1;
     transition: all 0.3s linear;
 }
 
-.user__options-button i{
-    font-size: 18px;
-}
+
 
 .user__options-button:hover{
-    background-color: var(--main-color);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.02);
+    border-left: 10px solid var(--main-color);
+}
+
+.user__options-button .iconify{
+    width: 27px;
+    height: 27px;
+    padding-left: 3vh;
+}
+
+.user__buttons{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.user__buttons-item{
+    font-family: 'Inter';
+    border: 0;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 400;
+    color: var(--section-4);
+    cursor: pointer;
+    font-size: 12px;
+    background-color: var(--section-2);
+    transition: all 0.3s ease-in-out;
+}
+
+.user__buttons-item:hover{
+    color: var(--section-2);
+    background-color: var(--section-4);
+}
+
+/*FAVOURITE CLUBS*/
+.club-name{
+    text-align: right;
+    font-weight: 100;
+}
+
+/* MAIN PAGE */
+.main__section{
+    background-color: white;
+    width: 84%;
+    display: flex;
+}
+
+/*HOME PAGE*/
+.home-page{
+    width: 83%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*SIDEBAR DER*/
+.sidebar-der{
+    width: 17%;
+    background-color: antiquewhite;
 }

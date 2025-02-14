@@ -7,6 +7,8 @@
     <link rel="icon" href="./img/futbol-regular (1).svg">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/7c1613023d.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+
 </head>
 <body>
     <div class="main">
@@ -14,44 +16,70 @@
         <div class="main__sidebar">
 
             <div class="logo">
-                <img src="./img/Logo.png" alt="logo-img">
+                <img src="./img/Logo.png" alt="logo-img" class="logo-img">
             </div>
 
             <div class="user">
 
+                <div class="user__profile">
+                    <div class="user__profile-banner"></div>
+
+                    <div class="user__profile-picture">
+                        <img src="img/UserIcon.svg" alt="profile-picture">
+                    </div>
+
+                    <div class="user__profile-stats">
+                        <div>
+                            <span class="number">1.984</span>
+                            <span>FOLLOWERS</span>
+                        </div>
+
+                        <div>
+                            <span class="number">1.872</span>
+                            <span>FOLLOWING</span>
+                        </div>
+                    </div>
+
+                    <div class="user__profile-name">
+                        <h2>USERNAME</h2>
+                        <p>@User_name</p>
+                    </div>
+                </div>
+
                 <div class="user__buttons">
                     <button class="user__buttons-item">Edit profile</button>
-                    <button class="user__buttons-item">Share link</button>
+                    <button class="user__buttons-item">Share profile</button>
                 </div>
 
                 <div class="user__options">
                     <button class="user__options-button">
-                        <i class="fa-solid fa-comment-dots" style="color: #5c5c5c;"></i>
+                        <span class="iconify" data-icon="pepicons-print:text-bubbles-circle-filled" data-width="40" data-height="40"></span>
+
                         Chats
                     </button>
 
                     <button class="user__options-button">
-                        <i class="fa-solid fa-trophy" style="color: #5c5c5c;"></i>
+                        <span class="iconify" data-icon="stash:trophy-duotone"></span>
                         My Pools
                     </button>
 
                     <button class="user__options-button">
-                        <i class="fa-solid fa-gift" style="color: #5c5c5c;"></i>
+                        <span class="iconify" data-icon="ph:gift-duotone"></span>
                         Rewards
                     </button>
 
                     <button class="user__options-button">
-                        <i class="fa-solid fa-chart-line" style="color: #5c5c5c;"></i>
+                        <span class="iconify" data-icon="ph:chart-bar-duotone"></span>
                         Statistics
                     </button>
 
                     <button class="user__options-button">
-                        <i class="fa-solid fa-star" style="color: #5c5c5c;"></i>
+                        <span class="iconify" data-icon="ph:star-duotone"></span>
                         Favourites
                     </button>
 
                     <button class="user__options-button">
-                        <i class="fa-solid fa-people-group" style="color: #5c5c5c;"></i>
+                        <span class="iconify" data-icon="ph:flag-duotone"></span>
                         Challenges
                     </button>
                 </div>
@@ -69,7 +97,7 @@
                         <img src="img/UserIcon.svg" alt="user-icon">
                         <div class="item-desc">
                             <h4 class="name">User name</h4>
-                            <p class="desc">User desc</p>
+                            <p class="desc">Followed by x and 3 more</p>
                         </div>
                     </div>
 
@@ -77,7 +105,7 @@
                         <img src="img/UserIcon.svg" alt="user-icon">
                         <div class="item-desc">
                             <h4 class="name">User name</h4>
-                            <p class="desc">User desc</p>
+                            <p class="desc">Suggested for you</p>
                         </div>
                     </div>
 
@@ -85,7 +113,7 @@
                         <img src="img/UserIcon.svg" alt="user-icon">
                         <div class="item-desc">
                             <h4 class="name">User name</h4>
-                            <p class="desc">User desc</p>
+                            <p class="desc">Recently joined</p>
                         </div>
                     </div>
                 </div>
@@ -99,17 +127,17 @@
 
                 <div class="fav-teams__list">
                     <div class="fav-teams__list-item">
-                        <img src="" alt="club-icon" class="club-icon">
+                        <img src="img/clubs/rm.svg" alt="club-icon" class="club-icon">
                         <h4 class="club-name">REAL MADRID FC</h4>
                     </div>
 
                     <div class="fav-teams__list-item">
-                        <img src="" alt="club-icon" class="club-icon">
+                        <img src="img/clubs/AC.svg" alt="club-icon" class="club-icon">
                         <h4 class="club-name">AC MILAN</h4>
                     </div>
 
                     <div class="fav-teams__list-item">
-                        <img src="" alt="club-icon" class="club-icon">
+                        <img src="img/clubs/UBC.svg" alt="club-icon" class="club-icon">
                         <h4 class="club-name">UB CONQUENSE</h4>
                     </div>
                 </div>
@@ -117,7 +145,46 @@
 
 
         </div>
-        <div class="main__section"></div>
+        <div class="main__section">
+
+            <div class="home-page">
+
+                <div class="home__header">
+                    <div class="home__header-links">
+                        <ul>
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">LIVE</a></li>
+                            <li><a href="">RESULTS</a></li>
+                            <li><a href="">POOLS</a></li>
+                            <li><a href="">RANKINGS</a></li>
+                            <li><a href="">CHALLENGUES</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="home__header-icons">
+                        <span class="iconify" data-icon="iconamoon:notification"></span>
+                        <span class="iconify" data-icon="iconamoon:search"></span>
+                    </div>
+                </div>
+
+                <div class="home__banner"></div>
+
+                <div class="home__now"></div>
+
+                <div class="home__leagues"></div>
+
+                <div class="home__pools"></div>
+
+                <div class="home__ranks"></div>
+
+            </div>
+
+            <div class="sidebar-der">
+
+            </div>
+
+        </div>
 
     </div>
 </body>

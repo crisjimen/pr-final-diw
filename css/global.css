@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @font-face {
     font-family: 'Myanmar';
     src: url('../fonts/Khyay-Regular.ttf') format('truetype');
   }
+
+
 :root{
     --bg-color:#FFFFFF;
-    --main-color:#AAFA12;
+    --main-color:#aef925;
+    --alt-main-color:#A6D100;
     --second-bg-color:#F7F7F7;
     --second-main-color:#1F1F1F;
     --section-2:#EDEDEE;
