@@ -1,6 +1,6 @@
 # 🏟️ OneGoal - Plataforma de Apuestas Deportivas
 
-¡Bienvenido a **OneGoal**! Una plataforma moderna de apuestas deportivas con desafíos personalizados, pools entre amigos y rankings en tiempo real. 🏅
+¡Bienvenido a **OneGoal**! Una plataforma de apuestas deportivas con desafíos personalizados, pools entre amigos y rankings en tiempo real, que combina una red social con un sistema de apuestas. 🏅
 
 ## 🚀 Características
 - **Apuestas personalizadas**: Crea y acepta desafíos a medida.
@@ -18,12 +18,11 @@
 
 ## ⚖️ Aviso
 
-Este proyecto, es un software de código abierto creado con fines educativos.
+Este proyecto es un software de código abierto con fines educativos.
 Todas las marcas registradas, logotipos, equipos, ligas y datos deportivos pertenecen a sus respectivos propietarios. 
 Este proyecto no está afiliado ni respaldado por ninguna organización deportiva, liga o entidad.
 
 ## 🏁 Instalación y Configuración
 
-1. **Clona este repositorio:**
-   ```bash
-   git clone https://github.com/tuusuario/sportsbet.git
+1. **Clona el repositorio:**
+   git clone https://github.com/crisjimen/pr-final-diw.git
