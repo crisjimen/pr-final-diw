@@ -703,6 +703,152 @@ body{
     scale: calc(1.05);
   }
 
+  /*FEATURED LEAGUES*/
+  .table-header{
+    display: flex;
+    align-items: center;
+    height: 6vh;
+    background-color: var(--section-2);
+    border-radius: 10px 10px 0 0;
+    gap: 1px;
+  }
+
+  .league-header img{
+    height: 4.5vh;
+  }
+
+  .league-header{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    height: 6vh;
+    padding: 0 10px;
+    background-color: var(--section-3);
+    width: 20vh;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .league-header.selected h4{
+    color: var(--section-2) !important;
+  }
+
+  .league-header.selected{
+    background-color: var(--section-4);
+  }
+
+  .league-header h4{
+    font-family: 'M PLUS 2';
+    line-height: 1;
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--section-4);
+  }
+
+.date{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    border-left: 10px solid var(--main-color);
+}
+
+.hour, .day{
+    margin-left: 12px;
+}
+
+.match-date{
+    display: flex;
+    align-items: center;
+    width: 20vh;
+    justify-content: left;
+    gap: 2vh;
+}
+
+.match-cell{
+    width: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 11px;
+}
+
+.rival-1, .rival-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    font-family: 'M PLUS 2';
+    font-weight: 600;
+    color: var(--section-4);
+}
+
+.rival-1 img, .rival-2 img{
+    height: 5vh;
+}
+
+.vs{
+    font-family: 'M PLUS 2';
+    font-size: 10px;
+    font-weight: 800;
+    color: var(--section-4);
+    background-color: white;
+    padding: 14px 10px;
+    border-radius: 25px;
+    box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+table td{
+    padding: 1.5vh 0;
+}
+
+.bets-cell{
+    display: flex;
+    width: 30vh;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.bets-cell .bet{
+    font-size: 12px;
+    padding: 13px 14px;
+    background-color: white;
+}
+
+.users-stats-cell{
+    width: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.users-stats-cell .iconify{
+    color: var(--main-color);
+    font-size: 30px;
+}
+
+table{
+    border-collapse: collapse;
+    font-family: 'Inter';
+}
+
+tr{
+    display: flex;
+    background-color: var(--section-2);
+    gap: 29.5px;
+    border-radius:5px;
+}
+
+tbody{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 2vh;
+    border: 1px solid var(--section-2);
+    border-radius: 0 0 5px 5px;
+}
+
 /*SIDEBAR DER*/
 .sidebar-der{
     width: 17%;
