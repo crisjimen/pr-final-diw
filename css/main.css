@@ -279,13 +279,210 @@ body{
 
 /*HOME PAGE*/
 .home-page{
-    width: 83%;
+    width: 80%;
     display: flex;
     flex-direction: column;
+    padding: 0 1%;
+}
+
+.home__header-links ul{
+    display: flex;
+    gap: 9vh;
+    padding: 0;
+    font-family: 'Myanmar';
+}
+
+.home__header-links ul li{
+    list-style-type: none;
+}
+
+.home__header-links ul li a{
+    text-decoration: none;
+    color: var(--section-4);
+    font-size: 15px;
+}
+
+.live{
+    color: var(--live-color) !important;
+}
+
+.home__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 5%;
+    gap: 10vh;
+}
+
+.home__header-icons{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2.5vh;
+    color: var(--section-4);
+    cursor: pointer;
+    
+}
+
+.home__header-icons .iconify{
+    font-size: 25px;
+    background-color: var(--section-2);
+    padding: 1.4vh;
+    border-radius: 10px;
+}
+
+.home__banner{
+    background-image: url('../img/clubs/banner.jpg');
+    background-repeat: no-repeat;
+    height: 48vh;
+    background-size:cover;
+    background-position: center;
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 30px;
+}
+
+.clubs{
+    display: flex;
+    gap: 20px;
+}
+
+.crest {
+    height: 32px;
+    padding: 9px 13px;
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.crest:nth-of-type(1){
+    width: 40px;
+    height: 40px;  
+    padding: 5px;  
+}
+
+
+.crest img {
+    width: 100%;
+    height: 100%;
+}
+
+.time-left{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: 'M PLUS 2';
+    padding-bottom: 10px;
+}
+
+.home__banner-header{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.time-num{
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+    gap: 0.5vh;
+    color: white;
+}
+
+.time-num p{
+    font-weight: 200;
+}
+
+.home__banner-footer{
+    line-height:0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.home__banner-footer p:first-of-type{
+    font-family: 'Lexend Exa';
+    font-weight: 800;
+    color: white;
+    font-size: 15px;
+}
+
+.home__banner-footer h5{
+    font-family: 'M PLUS 2';
+    font-size: 20px;
+    margin: 0.5% 0;
+}
+
+.home__banner-footer h5:nth-of-type(1){
+    font-weight: 800;
+}
+
+.home__banner-footer h5:nth-of-type(2){
+    font-weight: 500;
+}
+
+.home__banner-footer p{
+    font-family: 'Myanmar';
+    font-size: 13px;
+    white-space: pre-line;
+    line-height: normal;
+}
+
+.bet-now{
+    width: 25%;
+    border: 0;
+    padding: 12px 0;
+    font-family: 'M PLUS 2';
+    font-size: 20px;
+    font-weight: 500;
+    background-color: transparent;
+    backdrop-filter: blur(12px);
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.bet-now:hover{
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.238);
+    font-weight: 800;
+}
+
+.home__now-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home__now-title h2{
+    font-family: 'Lexend Exa';
+    font-size: 18px;
+    font-weight:800;
+    color: var(--section-5);
+    letter-spacing: -1px;
+}
+
+.home__now-title a{
+    font-family: 'Inter';
+    text-decoration: none;
+    font-size: 13px;
+    color: var(--section-4);
+}
+
+.home__now-title a:hover{
+    text-decoration: underline;
 }
 
 /*SIDEBAR DER*/
 .sidebar-der{
-    width: 17%;
+    width: 20%;
     background-color: antiquewhite;
 }
