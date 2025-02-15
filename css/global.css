@@ -7,6 +7,10 @@
     src: url('../fonts/Khyay-Regular.ttf') format('truetype');
   }
 
+  @font-face {
+    font-family: 'NicoMoji';
+    src: url('../fonts/NicoMoji-Regular.ttf');
+  }
 
 :root{
     --bg-color:#FFFFFF;
@@ -19,6 +23,7 @@
     --section-4:#5C5C5C;
     --section-5:#828282;
     --live-color:#F24822;
+    --live-color-bg:#f2482278;
 }
 
 /*LOGIN SECTION */

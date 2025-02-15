@@ -279,10 +279,11 @@ body{
 
 /*HOME PAGE*/
 .home-page{
-    width: 80%;
+    width: 83%;
     display: flex;
     flex-direction: column;
     padding: 0 1%;
+    gap: 13px;
 }
 
 .home__header-links ul{
@@ -481,8 +482,229 @@ body{
     text-decoration: underline;
 }
 
+/*NOW PLAYING*/
+.match-card{
+    width: 32%;
+    border: 1px solid var(--section-2);
+    padding: 25px 17px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.match-desc{
+    font-family: 'Myanmar';
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+    gap: 20px;
+}
+
+.match-desc h4{
+    font-weight: 200;
+    margin: 0;
+}
+
+.match-desc h5{
+    color: var(--section-3);
+    font-weight: 100;
+    margin: 0;
+}
+
+.live-icon{
+    display: flex;
+    color: var(--live-color);
+    align-items: center;
+    gap: 5px;
+    background-color: var(--live-color-bg);
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.card-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home__now{
+    display: flex;
+    flex-direction: column;
+}
+
+.home__now-cards{
+    display: flex;
+    width: 100%;
+    gap: 1vh;
+    justify-content: space-around;
+}
+
+.match-result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'NicoMoji';
+    color: var(--section-3);
+}
+
+.card-clubs{
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    justify-content: space-between;
+    height: 25vh;
+}
+
+.club{
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+
+.club .club-name{
+    font-family: 'Myanmar';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.club-name p{
+    font-size: 13px;
+    color: var(--section-3);
+}
+
+.club-name h2{
+    margin: 0;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.club img{
+    object-fit: cover;
+    object-position: center;
+    height: 13vh;
+}
+
+.winner{
+    color: black;
+}
+
+.result{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 28px;
+}
+
+.min{
+    font-size: 13px;
+}
+
+/* BET BUTTONS*/
+.card-betting{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+.bet{
+    color: var(--section-4);
+    border: 0;
+    padding: 16px 17px;
+    border-radius: 3px;
+    font-family: 'Inter';
+    background-color: var(--section-2);
+    box-shadow: 0px 1px 1.5px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.card-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4vh;
+}
+
+.people{
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+    margin-left: -10px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+  }
+
+  .profile-pic:first-child {
+    margin-left: 0;
+  }
+  
+  .profile-more {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--section-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--section-4);
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: -10px;
+    border: 2px solid white;
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+  }
+
+  .card-buttons{
+    display: flex;
+    align-items: center;
+  }
+
+  .watch{
+    border: 0;
+    background-color: var(--main-color);
+    padding:9px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .watch:hover{
+    scale: calc(1.05);
+  }
+
+
+  .card-buttons .iconify{
+    font-size: 25px;
+    color: var(--section-5);
+    background-color: var(--section-2);
+    padding: 3px;
+    border-radius: 15px;
+    box-shadow: 0px 1px 1.5px 0px rgba(0, 0, 0, 0.25);
+    margin-left: 5px;
+    cursor: pointer;
+  }
+
+  .card-buttons .iconify:hover{
+    scale: calc(1.05);
+  }
+
 /*SIDEBAR DER*/
 .sidebar-der{
-    width: 20%;
+    width: 17%;
     background-color: antiquewhite;
 }
