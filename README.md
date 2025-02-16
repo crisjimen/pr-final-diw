@@ -1,6 +1,6 @@
 # 🏟️ OneGoal - Plataforma de Apuestas Deportivas
 
-¡Bienvenido a **OneGoal**! Una plataforma de apuestas deportivas con desafíos personalizados, pools entre amigos y rankings en tiempo real, que combina una red social con un sistema de apuestas. 🏅
+OneGoal es una plataforma de apuestas deportivas con desafíos personalizados, pools entre amigos y rankings en tiempo real, que combina una red social con un sistema de apuestas. 🏅
 
 ## 🚀 Características
 - **Apuestas personalizadas**: Crea y acepta desafíos a medida.
