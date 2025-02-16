@@ -1,1 +1,176 @@
 @import url('./global.css');
+
+/*HEADER*/
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    position: sticky;
+    background-color: rgba(255, 255, 255, 0.436);
+    align-items: center;
+}
+
+.header img{
+    width: 30vh;
+}
+
+.register, .login{
+    border-radius: 20px;
+    padding: 8px 25px;
+    font-family: 'M PLUS 2';
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header__buttons{
+    display: flex;
+    gap: 15px;
+}
+
+.register{
+    background-color: var(--main-color);
+    border: 0;
+}
+
+.login{
+    border: 1px solid var(--section-4);
+}
+
+/* FOOTER */
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.sponsor h2{
+    margin: 0;
+}
+
+.sponsor{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 1vh;
+    font-size: 12px;
+    color: white;
+    align-items: center;
+    justify-items: center;
+    background: linear-gradient(90deg, rgba(170, 250, 18, 0.85) 0%, rgba(101, 148, 11, 0.85) 100%);
+}
+
+.sponsor-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+    align-items: center;
+}
+
+.sponsor-icons .iconify{
+    color: white;
+    font-size: 6vh;
+}
+
+.rev-logo{
+    height: 9vh;
+}
+
+.footer-body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--section-4);
+}
+
+.body1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid white;
+}
+
+.gmblng-text{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Merriweather Sans';
+    font-weight: 100;
+    font-size: 11px;
+    white-space: pre-line;
+}
+
+.logo-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.logo-icons img{
+    height: 7vh;
+}
+
+.footer-icons{
+    display: flex;
+    align-items: center;
+    gap: 3vh;
+    margin-left: 3.5vh;
+}
+
+.footer-icons .iconify{
+    color: white;
+    padding: 5px;
+    background-color: var(--section-5);
+    font-size: 3.5vh;
+    border-radius: 5px;
+}
+
+.gmblng-text span{
+    font-weight: 600;
+}
+
+.footer-links{
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: white;
+    font-family: 'Myanmar';
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.links ul{
+   margin: 0;
+}
+
+.links h4{
+    margin: 0;
+}
+
+.links ul li{
+    list-style-type: none;
+    font-size: 10px;
+}
+
+.body2{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    color: white;
+    align-items: center;
+}
+
+.body2 p{
+    font-size: 10px;
+}
+
+.payment-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+    font-size: 3vh;
+}
