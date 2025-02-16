@@ -87,6 +87,14 @@ btn2.addEventListener('click', (e) => {
 
     navLinks[1].classList.remove('selected');
     navLinks[2].classList.add('selected')
+});
+
+//Ir a la página principal cuando se da al boton de register
+const btnRegister = document.querySelector('.btnRegister');
+
+btnRegister.addEventListener('click', (e) => {
+    e.preventDefault;
+    window.location.href = 'main.html';
 })
 
 

@@ -1,5 +1,21 @@
 @import url('./global.css');
 
+@keyframes slideFromTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+body {
+    animation: slideFromTop 0.5s ease-out;
+}
+
+
 /*Login page*/
 body, html{
     overflow: hidden;
