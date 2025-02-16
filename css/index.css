@@ -2,6 +2,10 @@
 
 /*HEADER*/
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -161,7 +165,8 @@ body{
     font-weight: bold;
 }
 
-.main__section-1-desc h2{
+.main__section-1-desc h2,
+.main__section-3-desc h2{
     font-family: 'M PLUS 2';
     margin: 0.3em 0;
 }
@@ -226,6 +231,69 @@ body{
     font-size: 10vh;
     color: var(--section-2);
 }
+
+/* MAIN SECTION 3*/
+.main__section-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4vh 0;
+}
+
+.main__section-3-img{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.main__section-3-desc{
+    white-space: pre-line;
+    width: 40%;
+    height: fit-content;
+    align-items: flex-start;
+    padding-left: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__section-3-desc button{
+    padding: 15px 35px;
+    border: 0;
+    border-radius: 5px;
+    color: var(--section-2);
+    background-color: var(--second-main-color);
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Inter';
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.main__section-3-desc button:hover{
+    color: var(--second-main-color);
+    border: 1px solid var(--second-main-color);
+    background-color: transparent;
+}
+
+.main__section-3-desc ol{
+    margin: 0;
+    padding: 0;
+}
+
+.main__section-3-img img{
+    width: 100vh;
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2px;
+}
+
+.main__section-3-desc li{
+    margin: 0;
+}
+
+.main__section-3-desc span{ font-weight: 600;}
 
 
 /* FOOTER */
