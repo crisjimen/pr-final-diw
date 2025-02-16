@@ -919,11 +919,16 @@ tbody{
     padding: 5px;
 }
 
-.pool-foot .user{
+.pool-foot .user, .pool-card-header .user{
     flex-direction: row;
     align-items: center;
     font-size: 10px;
     gap: 5px;
+}
+
+.user img{
+    height: 4vh;
+    border-radius: 50%;
 }
 
 .pool-title h4{
@@ -1011,7 +1016,7 @@ tbody{
     align-items: center;
 }
 
-.pool-foot .join{
+.join{
     background-color: var(--main-color);
     border: none;
     padding: 5px 20px;
@@ -1266,3 +1271,140 @@ tbody{
     color: var(--section-4) !important;
 }
 
+/*POOLS*/
+.home__now-title button{
+    background-color: var(--main-color);
+    border: 0;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 0px rgba(170, 250, 18, 0.76);
+}
+
+/* POOLS */
+.player-progress {
+    display: flex;
+    align-items: center;
+    background: var(--section-2);
+    border-radius: 10px;
+    width: 40vh;
+    position: relative;
+    padding: 0 10px;
+}
+
+.player-progress .iconify {
+    font-size: 1.5rem;
+    border-radius: 50%;
+    color: var(--section-5);
+    margin-right: 10px;
+}
+
+.progress-bar {
+    flex-grow: 1;
+    height: 10px;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background: var(--main-color);
+    border-radius: 5px;
+}
+
+.player-count {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.pool-card-footer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.details{
+    background-color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 1px solid var(--section-4);
+    color:var(--section-4);
+    cursor: pointer;
+    font-family: 'M PLUS 2';
+    font-weight: 800;
+    box-shadow: 0px 0px 5px 0px rgba(148, 148, 148, 0.76);
+}
+
+.pool-card-header .user{
+    flex-direction: row-reverse;
+}
+
+
+.pool-card-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pool-contidion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 25vh;
+    justify-content: left;
+}
+
+.pool-contidion .iconify{
+    font-size: 4vh;
+    color: var(--main-color);
+}
+
+.condition-desc h5{
+    margin: 0.1em;
+    font-size: 15px;
+}
+
+.home__pools-body{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.home__pools-card{
+    width: 45%;
+    padding: 15px;
+    border: 1px solid var(--section-3);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-foot-buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.condition-desc{
+    font-size: 12px;
+}
+
+.pool-card-body{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.pool-card-body .row{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
