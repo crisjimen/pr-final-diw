@@ -273,13 +273,13 @@ body{
 /* MAIN PAGE */
 .main__section{
     background-color: white;
-    width: 84%;
+    width: 81%;
     display: flex;
 }
 
 /*HOME PAGE*/
 .home-page{
-    width: 83%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     padding: 0 1%;
@@ -856,9 +856,175 @@ tbody{
 
 /*SIDEBAR DER*/
 .sidebar-der{
-    width: 17%;
-    background-color: antiquewhite;
+    width: 20%;
+    background-color: var(--section-2);
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 15px;
 }
+
+.wallet{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.wallet-desc{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+
+.wallet-desc h2{
+    font-size: 14px;
+    margin: 0;
+}
+
+.wallet-desc p{
+    font-size: 8px;
+    color: var(--section-4);
+}
+
+.balance{
+    font-weight: 700;
+    color: var(--main-color) !important;
+}
+
+.wallet-button{
+    font-size: 12px;
+    border: 0;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: white;
+    background-color: var(--main-color);
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0px rgba(170, 250, 18, 0.76);
+
+}
+
+.pool{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.pool-foot .user{
+    flex-direction: row;
+    align-items: center;
+    font-size: 10px;
+    gap: 5px;
+}
+
+.pool-title h4{
+    margin: 0;
+    font-size: 14px;
+    color: black;
+    font-weight: 900;
+}
+
+.pool-title{
+    font-size: 10px;
+    color: var(--section-5);
+}
+
+.pools-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-family: 'Lexend Exa';
+}
+
+.active-pools button{
+    border: 0;
+    padding: 9px;
+    font-family: 'M PLUS 2';
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.create{
+    color: var(--section-4);
+    border: 1px solid var(--section-5) !important;
+    
+}
+
+.see-pools{
+    color: var(--section-5);
+    background-color: white;
+}
+
+
+.pools-title a{
+    font-family: 'Inter';
+    font-family: 10px;
+    color: var(--section-5);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.pools-title a:hover{
+    text-decoration: underline;
+}
+
+
+.pools-conditions{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.pool-item{
+    display: flex;
+    font-size: 11px;
+    font-weight: 500;
+    align-items: center;
+    gap: 5px;
+    color: var(--section-4);
+    font-family: 'M PLUS 2';
+}
+
+.pool-item .iconify{
+    color: var(--alt-main-color);
+    font-size: 3.5vh;
+}
+
+.pool-foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pool-foot .join{
+    background-color: var(--main-color);
+    border: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-family: 'M PLUS 2';
+    font-weight: 800;
+    box-shadow: 0px 0px 5px 0px rgba(170, 250, 18, 0.76);
+}
+
+.pool-foot .user img{
+    height: 4vh;
+    width: 4vh;
+    border-radius: 25px;
+    border: 3px solid var(--main-color);
+}
+
 
 /* FOOTER */
 .footer{
@@ -991,4 +1157,11 @@ tbody{
     flex-direction: row;
     gap: 2vh;
     font-size: 3vh;
+}
+
+/* SIDEBAR*/
+.active-pools{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
