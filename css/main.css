@@ -816,8 +816,12 @@ table td{
     background-color: white;
 }
 
+.main__sidebar .user img{
+    height: 11vh;
+}
+
 .users-stats-cell{
-    width: 30vh;
+    width: 25vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1407,4 +1411,174 @@ tbody{
     flex-direction: row;
     display: flex;
     justify-content: space-around;
+}
+
+/* RANKS*/
+.home__ranks-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10vh;
+    padding: 20px 0;
+    border: 1px solid var(--section-2);
+    border-radius: 10px;
+}
+
+.home__ranks {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+ 
+}
+
+.home__ranks .title {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #999;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    font-family: 'M PLUS 2';
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tab {
+    background: #ddd;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.tab.active {
+    background: var(--main-color);
+    color: white;
+}
+
+.ranking-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.top-players {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.player {
+    font-family: 'Inter';
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--section-4);
+    gap: 6px;
+}
+
+.player span{
+    background-color: var(--section-2);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rankings .rank {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: white;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+}
+
+.rank.highlight {
+    background: var(--main-color);
+
+}
+
+.avatar img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.challenges-section {
+    padding: 10px 20px;
+}
+
+.challenge-desc{
+    font-weight: 700;
+}
+
+.challenge-desc p{
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--section-5);
+}
+
+.challenge {
+    width: 35vh;
+    background: white;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player.first .avatar{
+    width: 75px;
+    height: 75px;
+}
+
+.player.first{
+    margin-bottom: 20px;
+}
+
+.challenge.active {
+    background: var(--main-color);
+}
+
+.create-challenge {
+    width: 100%;
+    background: var(--main-color);
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
 }
