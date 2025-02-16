@@ -16,6 +16,10 @@
 
 ---
 
+## 🎨 Diseño preeliminar en Figma
+   El diseño y prototipo del proyecto se encuentra en Figma, al cual se puede acceder a través de este enlace.
+   https://www.figma.com/design/X9uliVFNEtYfHB4yWQecMO/OneGoal?m=auto&t=Dk5iitiw7rkLNSQ4-6
+
 ## ⚖️ Aviso
 
 Este proyecto es un software de código abierto con fines educativos.
@@ -26,3 +30,5 @@ Este proyecto no está afiliado ni respaldado por ninguna organización deportiv
 
 1. **Clona el repositorio:**
    git clone https://github.com/crisjimen/pr-final-diw.git
+
+
