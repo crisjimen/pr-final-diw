@@ -64,7 +64,6 @@ navLinks.forEach(navLink => {
         forms[1].style.display='none';
         forms[2].style.display='flex';
     }
-
     
 });
 });
@@ -96,8 +95,6 @@ btnRegister.addEventListener('click', (e) => {
     e.preventDefault;
     window.location.href = 'main.html';
 })
-
-
 
 
 
