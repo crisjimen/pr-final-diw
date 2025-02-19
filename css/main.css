@@ -283,7 +283,7 @@ body{
 
 /*HOME PAGE*/
 .home-page{
-    width: 80%;
+    width: 77%;
     display: flex;
     flex-direction: column;
     padding: 0 1%;
@@ -315,7 +315,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1% 5%;
+    padding: 1% 5% 0;
     gap: 10vh;
 }
 
@@ -465,6 +465,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 1%;
+    margin-bottom: 1%;
 }
 
 .home__now-title h2{
@@ -845,7 +847,7 @@ table{
 tr{
     display: flex;
     background-color: var(--section-2);
-    gap: 29.5px;
+    gap: 16.5px;
     border-radius:5px;
 }
 
@@ -865,9 +867,9 @@ tbody{
 /*SIDEBAR DER*/
 .sidebar-der{
     gap: 25px;
-    width: 20%;
+    width: 23%;
     background-color: var(--section-2);
-    padding: 10px 5px;
+    padding: 10px 15px;
     display: flex;
     flex-direction: column;
     border-top-left-radius: 15px;
@@ -906,9 +908,10 @@ tbody{
 }
 
 .wallet-button{
-    font-size: 12px;
+    font-size: 10px;
     border: 0;
-    padding: 5px 10px;
+    width: 10vh;
+    padding: 7px 10px;
     border-radius: 3px;
     color: white;
     background-color: var(--main-color);
@@ -924,7 +927,7 @@ tbody{
     gap: 10px;
     background-color: white;
     border-radius: 5px;
-    padding: 5px;
+    padding: 15px 10px;
 }
 
 .pool-foot .user, .pool-card-header .user{
@@ -965,7 +968,7 @@ tbody{
 
 .active-pools button{
     border: 0;
-    padding: 9px;
+    padding: 5px 12px;
     font-family: 'M PLUS 2';
     font-weight: 500;
     border-radius: 5px;
@@ -1186,7 +1189,8 @@ tbody{
 
 .fr-desc{
     text-align: center;
-    font-size: 8px;
+    font-size: 9px;
+    font-weight: 600;
     color: var(--section-5);
 }
 
@@ -1201,7 +1205,7 @@ tbody{
     width: 48%;
     flex-direction: column;
     background-color: white;
-    padding: 10px 0;
+    padding: 10px 1px;
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -1236,13 +1240,28 @@ tbody{
 
 .fr-stats .iconify{
     font-size: 5vh;
-    color:var(--alt-main-color)
+    color:var(--alt-main-color);
 }
+
+.fr-stats p{
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.dwn-grade{
+    transform: rotate(180deg) scaleX(-1) !important;
+    color: var(--live-color) !important;
+} 
 
 .news-item {
     flex-direction: column;
     display: flex;
     gap: 2px;
+    margin-bottom: 15px;
+}
+
+.news-item h4, .news-item p{
+    margin-left: 10px !important;
 }
 
 .news-item img{
@@ -1272,6 +1291,10 @@ tbody{
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.news-item img{
+    align-self: center;
 }
 
 .dd{
@@ -1388,12 +1411,12 @@ tbody{
 .home__pools-card{
     width: 45%;
     padding: 15px;
-    border: 1px solid var(--section-3);
+    border: 1px solid var(--section-2);
     border-radius: 5px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 }
 
 .card-foot-buttons{
@@ -1586,3 +1609,4 @@ tbody{
     cursor: pointer;
     margin-top: 10px;
 }
+
