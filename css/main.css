@@ -121,7 +121,7 @@ body{
 .fav-teams__list-item{
     border-radius: 5px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 
@@ -193,7 +193,7 @@ body{
 .user__profile-stats{
     display: flex;
     justify-content: space-around;
-    margin-top: -40px;
+    margin-top: -37px;
     gap: 35%;
     color: var(--section-4);
 }
@@ -490,6 +490,7 @@ body{
 
 /*NOW PLAYING*/
 .match-card{
+    gap: 7px;
     width: 32%;
     border: 1px solid var(--section-2);
     padding: 25px 17px;
@@ -537,6 +538,7 @@ body{
 .home__now{
     display: flex;
     flex-direction: column;
+    margin-bottom: 2%;
 }
 
 .home__now-cards{
@@ -710,6 +712,12 @@ body{
   }
 
   /*FEATURED LEAGUES*/
+  .home__leagues,
+  .home__pools,
+  .home__ranks{
+    margin-bottom: 2%;
+  }
+
   .table-header{
     display: flex;
     align-items: center;
@@ -949,6 +957,10 @@ tbody{
     font-weight: 900;
 }
 
+.pool-title p{
+    font-style: italic;
+}
+
 .pool-title{
     font-size: 10px;
     color: var(--section-5);
@@ -968,15 +980,17 @@ tbody{
 
 .active-pools button{
     border: 0;
-    padding: 5px 12px;
+    padding: 5px 15px;
     font-family: 'M PLUS 2';
     font-weight: 500;
     border-radius: 5px;
+    font-size: 11px;
 }
 
 .create{
     color: var(--section-4);
     border: 1px solid var(--section-5) !important;
+    background-color: var(--section-3);
     
 }
 
@@ -1002,7 +1016,7 @@ tbody{
 .pools-conditions{
     display: flex;
     gap: 20px;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .pool-item{
@@ -1044,6 +1058,12 @@ tbody{
     width: 4vh;
     border-radius: 25px;
     border: 3px solid var(--main-color);
+}
+
+.create, .see-pools{
+    padding: 10px 0 !important;
+    font-weight: 600 !important;
+    font-size: 12px !important;
 }
 
 
@@ -1406,6 +1426,7 @@ tbody{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
 }
 
 .home__pools-card{
