@@ -985,6 +985,7 @@ tbody{
     font-weight: 500;
     border-radius: 5px;
     font-size: 11px;
+    cursor: pointer;
 }
 
 .create{
@@ -1419,7 +1420,7 @@ tbody{
 
 .condition-desc h5{
     margin: 0.1em;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .home__pools-body{
@@ -1437,7 +1438,7 @@ tbody{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 23px;
 }
 
 .card-foot-buttons{
