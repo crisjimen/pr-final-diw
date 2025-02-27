@@ -26,6 +26,11 @@
     --live-color-bg:#f2482278;
 }
 
+html{
+  scrollbar-width: thin;
+  scrollbar-color: var(--main-color) var(--second-bg-color);
+}
+
 /*LOGIN SECTION */
 body{
     opacity: 1;
