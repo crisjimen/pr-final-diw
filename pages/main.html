@@ -6,7 +6,7 @@
     <title>Main - OneGoal</title>
     <link rel="icon" href="../img/futbol-regular (1).svg">
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/output.css"> <!--Tailwind-->
+    
     <script src="https://kit.fontawesome.com/7c1613023d.js" crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 
@@ -151,9 +151,7 @@
             <div class="home-page">
 
                 <!--La sección de notificaciones se implementará con tailwind-->
-                <div class="notification__panel ">
-
-                </div>
+                <div id="notification"></div>
 
                 <div class="home__header">
                     <div class="home__header-links">
@@ -1371,6 +1369,12 @@
 
         </div>
     </div>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- Componente de notificaciones -->
+     <script src="../js/notification.js" type="text/babel"></script>
 </body>
 <script src="../js/main.js"></script>
 </html>

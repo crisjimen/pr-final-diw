@@ -1,5 +1,7 @@
+@import url('./output.css');
 @import url('./global.css');
 
+@layer base{
 html{
     scroll-behavior: smooth;
 }
@@ -162,7 +164,7 @@ body{
 .user__profile-name{
     display: flex;
     flex-direction: column;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 .user__profile-name > h2, p{
@@ -193,7 +195,7 @@ body{
 .user__profile-stats{
     display: flex;
     justify-content: space-around;
-    margin-top: -37px;
+    margin-top: -30px;
     gap: 35%;
     color: var(--section-4);
 }
@@ -395,7 +397,7 @@ body{
 .time-num{
     display: flex;
     flex-direction: column;
-    line-height: 0;
+    line-height: 1;
     gap: 0.5vh;
     color: white;
 }
@@ -975,6 +977,7 @@ tbody{
 }
 
 .pools-title h3{
+    width: 20vh;
     margin: 0.4em;
 }
 
@@ -1632,3 +1635,4 @@ tbody{
     margin-top: 10px;
 }
 
+}
