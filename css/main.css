@@ -1,4 +1,4 @@
-@import url('./output.css');
+@import url('./tailwind.css');
 @import url('./global.css');
 
 @layer base{
