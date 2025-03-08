@@ -215,17 +215,88 @@
 
                 <!--Pantalla de crear una nueva pool -->
                 <div class="create-pool hidden fixed top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 
-                w-80 p-6 bg-white shadow-lg rounded-lg shadow-sm">
+                w-220 p-6 px-8 bg-white shadow-lg rounded-lg shadow-sm flex flex-col">
 
-
-                    <h1>Create new pool</h1>
-                    <span id="close-card" data-icon="fontisto:close" class="iconify cursor-pointer"></span>
-
+                    <div class="create-pool__title flex justify-between items-center border-b border-gray-400 pb-2 mt-2">
+                        <h1 class="text-xl">Create new pool</h1>
+                        <span id="close-card" data-icon="fontisto:close" class="iconify cursor-pointer text-xl text-lime-500"></span>
+                    </div>
                     
+                    <div class="create-pool__settings">
+                        <h2 class="mt-2">Pool settings</h2>
+
+                        <div class="flex justify-between mt-2">
+
+                            <div class="flex flex-col">
+                                <label for="pool-name">
+                                    Pool name
+                                </label>
+                                <input type="text" name="pool-name" id="pool-name" placeholder="Pool name"
+                                class="border-b border-gray-400 pr-2 w-90 py-1 focus:outline-none text-sm mt-2">
+                            </div>
+
+                            <div class="flex flex-col gap-2">
+                                <p>Pool access</p>
+                                <div class="flex gap-2">
+
+                                    <label class="flex-1 p-2 border border-gray-300 rounded-lg cursor-pointer transition-transform 
+                                    transform hover:scale-105 focus:outline-none">
+                                        <input type="radio" name="selection" class="hidden peer" checked/>
+
+                                        <div class="flex flex-col items-left z-10">
+                                            <div class="font-semibold text-sm flex gap-1">
+                                                <span class="iconify text-lg text-lime-400" data-icon="material-symbols:public"></span>
+                                                Public
+                                            </div>
+                                            <p class="text-gray-600 text-xs mt-1">Anyone can join your pool.</p>
+                                        </div>
+
+                                        <!--Cambia de fondo al seleccionarlo-->
+                                        <span class="absolute top-0 left-0 w-full h-full rounded-lg opacity-0 peer-checked:opacity-20 
+                                        peer-checked:bg-gray-500 transition-all z-0"></span>
+                                    </label>
+
+                                    <label class="flex-1 py-2 px-3 border border-gray-300 rounded-lg cursor-pointer transition-transform 
+                                    transform hover:scale-105 focus:outline-none">
+
+                                        <input type="radio" name="selection" class="hidden peer" />
+
+                                        <div class="flex flex-col items-left z-10">
+                                            <div class="font-semibold text-sm flex gap-1">
+                                                <span class="iconify text-lg text-lime-400" data-icon="ri:lock-password-line"></span>
+                                                Private
+                                            </div>
+
+                                            <p class="text-gray-600 text-xs mt-1">Only invited people can join your pool</p>
+                                        </div>
+
+                                        <span class="absolute top-0 left-0 w-full h-full rounded-lg opacity-0 peer-checked:opacity-20 
+                                        peer-checked:bg-gray-500 transition-all z-0"></span>
+                                    </label>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="flex mt-2">
+                            <div class="flex justify-between items-center w-full">
+                                <h1>League</h1>
+                                <p class="text-xs line-height-0 cursor-pointer text-gray-600">View more</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="create-pool__options"></div>
+
+
                 </div>
 
                 <!--Capa de overlay cuando se muestra la tarjeta-->
                 <div id="overlay" class="hidden fixed inset-0 bg-transparent z-40 filter backdrop-blur"></div>
+
+
 
                 <div class="home__header">
                     <div class="home__header-links">

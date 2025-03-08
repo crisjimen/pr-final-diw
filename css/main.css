@@ -1663,4 +1663,8 @@ tbody{
     color: var(--alt-main-color);
 }
 
+.create-pool{
+    font-family: 'Myanmar';
+}
+
 }
