@@ -30,6 +30,7 @@
 }
 @layer base {
   *, ::after, ::before, ::backdrop, ::file-selector-button {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: 0 solid;
@@ -55,6 +56,7 @@
     -webkit-text-decoration: underline dotted;
     text-decoration: underline dotted;
   }
+  
   a {
     color: inherit;
     -webkit-text-decoration: inherit;
@@ -110,6 +112,7 @@
     height: auto;
   }
   input, select, optgroup, textarea, ::file-selector-button {
+    font: inherit;
     font-feature-settings: inherit;
     font-variation-settings: inherit;
     letter-spacing: inherit;
