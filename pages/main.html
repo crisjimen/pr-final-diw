@@ -214,7 +214,7 @@
                 </div>
 
                 <!--Pantalla de crear una nueva pool -->
-                <div class="create-pool hidden fixed top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 
+                <div class="create-pool hidden fixed top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/3 z-50 
                 w-220 p-6 px-8 bg-white shadow-lg rounded-lg shadow-sm flex flex-col">
 
                     <div class="create-pool__title flex justify-between items-center border-b border-gray-400 pb-2 mt-2">
@@ -236,7 +236,7 @@
                             </div>
 
                             <div class="flex flex-col gap-2">
-                                <p>Pool access</p>
+                                <p>Who can join?</p>
                                 <div class="flex gap-2">
 
                                     <label class="flex-1 p-2 border border-gray-300 rounded-lg cursor-pointer transition-transform 
@@ -279,12 +279,50 @@
 
                         </div>
 
-                        <div class="flex mt-2">
+                        <div class="flex mt-4 flex-col">
                             <div class="flex justify-between items-center w-full">
-                                <h1>League</h1>
-                                <p class="text-xs line-height-0 cursor-pointer text-gray-600">View more</p>
+                                <h1>Select a league</h1>
+                                <p class="text-xs line-height-0 cursor-pointer text-gray-600 hover:underline">View more</p>
+                            </div>
+
+                            <div class="flex justify-around items-center mt-4">
+                                <img src="../img/league-icons/icons8-uefa-champions.svg" alt="champions-logo" 
+                                class="w-12 h-12 p-3 bg-gray-200 rounded-full cursor-pointer hover:bg-gray-300 transition-all ease-in-out">
+
+                                <span class="iconify w-12 h-12 text-neutral-500 p-3 bg-gray-200 
+                                rounded-full cursor-pointer hover:bg-gray-300 transition-all ease-in-out" 
+                                data-icon="simple-icons:premierleague"></span>
+
+                                <img src="../img/ligues/Laligalogo1.png" alt="laliga-logo" 
+                                class="w-12 h-12 p-3 bg-gray-200 rounded-full cursor-pointer hover:bg-gray-300 
+                                transition-all ease-in-out">
+
+                                <img src="../img/ligues/Europa1.png" alt="euro-league" 
+                                class="w-12 h-13 py-3 px-4 bg-gray-200 rounded-full cursor-pointer hover:bg-gray-300 
+                                transition-all ease-in-out">
+
+                                <img src="../img/ligues/Seriea1.png" alt="serie-a-logo" 
+                                class="w-11 h-13 px-4 py-3 bg-gray-200 rounded-full cursor-pointer hover:bg-gray-300 
+                                transition-all ease-in-out">
+
+                                <img src="../img/ligues/Ligue_1_Uber_Eats_logo.svg.png" alt="ligue1-logo" 
+                                class="w-12 h-11 px-3 py-3.5 bg-gray-200 rounded-full cursor-pointer hover:bg-gray-300 
+                                transition-all ease-in-out">
                             </div>
                         </div>
+
+                        <div class="flex mt-6 flex-col">
+                            <h1>Select a match</h1>
+                            <select name="match" id="match" class="p-2 focus:outline-none border border-lime-300 rounded-sm
+                            text-sm text-gray-600">
+                                <option value="opt1">Choose an available match</option>
+                                <option value="opt2">Match #1</option>
+                                <option value="opt3">Match #2</option>
+                                <option value="opt4">Match #3</option>
+                            </select>
+                        </div>
+
+                        
 
                     </div>
 
