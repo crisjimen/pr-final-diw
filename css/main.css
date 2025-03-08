@@ -1,7 +1,15 @@
-@import url('./tailwind.css');
+@import url('./output.css');
 @import url('./global.css');
 
 @layer base{
+*{
+    box-sizing: content-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal; 
+  }
+
 html{
     scroll-behavior: smooth;
 }
@@ -444,7 +452,7 @@ body{
 .bet-now{
     width: 25%;
     border: 0;
-    padding: 12px 0;
+    padding: 25px 0;
     font-family: 'M PLUS 2';
     font-size: 20px;
     font-weight: 500;
@@ -1633,6 +1641,26 @@ tbody{
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
+}
+
+/*NOTIFICATION PANEL*/
+#notification {
+    top: 10.5%;
+    right: 1%;
+    background-color: var(--bg-color);
+    font-family: 'Myanmar';
+}
+
+.title-1 span{
+    color: var(--main-color);
+}
+
+.title-1 p{
+    color: var(--section-4);
+}
+
+.title-2{
+    color: var(--alt-main-color);
 }
 
 }

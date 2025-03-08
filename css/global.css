@@ -13,7 +13,7 @@
   }
 
 :root{
-    --bg-color:#FFFFFF;
+    --bg-color:#FFFFFF !important;
     --main-color:#aef925;
     --alt-main-color:#A6D100;
     --second-bg-color:#F7F7F7;
