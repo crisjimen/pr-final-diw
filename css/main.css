@@ -1,6 +1,7 @@
+@import url('./tailwind.css');
 @import url('./global.css');
 
-
+@layer base{
 html{
     scroll-behavior: smooth;
 }
@@ -316,7 +317,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5%;
+    padding: 1% 5% 0;
     gap: 10vh;
 }
 
@@ -1634,3 +1635,4 @@ tbody{
     margin-top: 10px;
 }
 
+}

@@ -1,11 +1,12 @@
 
 const Notification = () => {
     return (
-        <div className="fixed p-4">
-            <h2>Notification</h2>
+        <div>
+            
         </div>
     );
 };
 
+// Renderiza el componente en el `div#root`
 const root = ReactDOM.createRoot(document.getElementById("notification"));
 root.render(<Notification />);
