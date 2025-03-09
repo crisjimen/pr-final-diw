@@ -71,4 +71,20 @@ document.addEventListener('DOMContentLoaded', () => {
     closeNotification[0].addEventListener('click', () => {
         notificationBar[0].classList.add('opacity-0', 'translate-y-[-100%]');
     });
+
+    //Mostrar pantalla del asistente
+    const assistantBtn = document.getElementById('assistant-gif');
+    const assistantCard = document.getElementById('assistant-container');
+
+    assistantBtn.addEventListener('click', () => {
+
+        assistantCard.classList.toggle('hidden');
+        assistantCard.classList.toggle('scale-0');
+        assistantCard.classList.toggle('scale-100');
+
+        assistantBtn.classList.toggle('rounded-full');
+        assistantBtn.classList.toggle('rounded-br-full');
+        assistantBtn.classList.toggle('rounded-tr-full');
+        assistantBtn.classList.toggle('shadow-none');
+    });
 })
