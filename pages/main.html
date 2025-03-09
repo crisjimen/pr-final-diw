@@ -504,7 +504,7 @@
 
                                     <div class="flex flex-col">
                                         <div class="font-semibold text-sm flex items-center">
-                                            Stardard
+                                            Standard
                                         </div>
                                         <p class="text-gray-600 text-xs mt-1">
                                             Punctuation is based on exact results, winner and draw.</p>
@@ -540,38 +540,66 @@
                         <div class="flex flex-col mt-6">
                             <h1>Tie-breaking methods</h1>
 
-                            <div class="flex gap-4 mt-2">
+                            <div class="flex gap-4 mt-4 justify-around">
 
                                 <label class="cursor-pointer">
                                     <input type="radio" name="tie" class="peer hidden" checked>
 
-                                    <div class="flex items-center rounded-full border px-4 py-2 peer-checked:bg-lime-300">
-                                        <span class="iconify" data-icon="fluent:alert-24-filled"></span>
-                                        <span>Report</span>
+                                    <div class="flex items-center rounded-full border-2 px-4 py-2 border-lime-400 text-lime-400
+                                    peer-checked:bg-lime-200 peer-checked:text-black gap-2 hover:shadow-md hover:shadow-lime-300
+                                    transition-all ease-in-out text-sm w-40 justify-center">
+
+                                        <span class="iconify text-xl align-middle" data-icon="fluent-emoji-high-contrast:pool-8-ball"></span>
+                                        <span>Last bet winner</span>
                                     </div>
                                 </label>
 
                                 <label class="cursor-pointer">
                                     <input type="radio" name="tie" class="peer hidden">
 
-                                    <div class="flex items-center rounded-full border px-4 py-2 peer-checked:bg-lime-300">
-                                        <span class="iconify" data-icon="fluent:alert-24-filled"></span>
-                                        <span>Report</span>
+                                    <div class="flex items-center rounded-full border-2 px-4 py-2 border-lime-400 text-lime-400
+                                    peer-checked:bg-lime-200 peer-checked:text-black gap-2 hover:shadow-md hover:shadow-lime-300
+                                    transition-all ease-in-out text-sm w-40 justify-center">
+                                        <span class="iconify text-xl align-middle" data-icon="material-symbols:check-box"></span>
+                                        <span>Correct hits</span>
                                     </div>
                                 </label>
 
                                 <label class="cursor-pointer">
                                     <input type="radio" name="tie" class="peer hidden">
 
-                                    <div class="flex items-center rounded-full border px-4 py-2 peer-checked:bg-lime-300 ">
-                                        <span class="iconify" data-icon="fluent:alert-24-filled"></span>
-                                        <span>Report</span>
+                                    <div class="flex items-center rounded-full border-2 px-4 py-2 border-lime-400 text-lime-400
+                                    peer-checked:bg-lime-200 peer-checked:text-black gap-2 hover:shadow-md hover:shadow-lime-300
+                                    transition-all ease-in-out text-sm w-40 justify-center">
+
+                                        <span class="iconify text-xl align-middle" data-icon="tabler:circle-percentage-filled"></span>
+                                        <span>Precision rate</span>
+                                    </div>
+                                </label>
+
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="tie" class="peer hidden">
+
+                                    <div class="flex items-center rounded-full border-2 px-4 py-2 border-lime-400 text-lime-400
+                                    peer-checked:bg-lime-200 peer-checked:text-black gap-2 hover:shadow-md hover:shadow-lime-300
+                                    transition-all ease-in-out text-sm w-40 justify-center">
+
+                                        <span class="iconify text-xl align-middle" data-icon="material-symbols:star-rounded"></span>
+                                        <span>Season points</span>
                                     </div>
                                 </label>
 
                             </div>
                         </div>
 
+                    </div>
+
+                    <div class="create-pool__button w-full flex justify-center mt-8">
+                        <button type="submit"
+                        class="bg-lime-400 hover:bg-lime-500 text-white font-semibold py-2 px-12 rounded 
+                        transition-all ease-in-out cursor-pointer ">
+                            Create pool
+                        </button>
                     </div>
 
 
