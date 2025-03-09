@@ -33,9 +33,18 @@ overlay.addEventListener('click', () => {
     overlay.classList.add('hidden');
 });
 
-const slider = document.getElementById("participants");
+/*Cambiar el valor de los participantes */
+const participantsBar = document.getElementById("participants");
 const selectedValue = document.getElementById("selectedValue");
 
-slider.addEventListener("input", function () {
-    selectedValue.textContent = slider.value;
+participantsBar.addEventListener("input", function () {
+    selectedValue.textContent = participantsBar.value;
+});
+
+/*Cambiar el valor de la apuesta */
+const betAmountBar = document.getElementById("bet-amount");
+const selectedAmount = document.getElementById("selectedAmount");
+
+betAmountBar.addEventListener("input", function () {
+    selectedAmount.textContent = betAmountBar.value;
 });

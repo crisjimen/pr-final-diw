@@ -1667,4 +1667,8 @@ tbody{
     font-family: 'Myanmar';
 }
 
+#selection{
+    accent-color: var(--main-color);
+}
+
 }

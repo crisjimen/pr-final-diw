@@ -345,8 +345,9 @@
                                 
                             </div>
                     
-                            <p class="text-sm text-gray-700 mt-2">
-                                Selected: <span id="selectedValue" class="font-semibold">10</span> participants
+                            <p class="text-sm text-gray-700 mt-2 flex gap-1">
+                                <span class="iconify text-xl" data-icon="mdi:account-group"></span>
+                                <span id="selectedValue" class="font-semibold">10</span> participants
                             </p>
                             
                         </div>
@@ -459,6 +460,116 @@
                                 </label>
                             </div>
 
+                            <div class="flex mt-6 flex-col">
+                                <h1>Minimum bet amount</h1>
+    
+                                <div class="flex items-center gap-2 mt-2 flex-col">
+    
+                                    <div class="flex justify-between w-full text-sm">
+                                        <span class="text-gray-500">Min. 1€</span>
+                                        <span class="text-gray-500">Max. 30€</span>
+                                    </div>
+                                     
+                                    <!--El webkit edita la barra de rango-->
+                                    <input id="bet-amount" type="range" min="1" max="30" value="5" step="0.5"
+                                        class="w-full appearance-none bg-transparent rounded-lg py-1 cursor-pointer
+                                        [&::-webkit-slider-runnable-track]:bg-gray-200 [&::-webkit-slider-runnable-track]:h-2
+                                        flex align-center
+                                        [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-6 
+                                        [&::-webkit-slider-thumb]:h-6 [&::-webkit-slider-thumb]:bg-lime-300 
+                                        [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:border-1 
+                                        [&::-webkit-slider-thumb]:border-white [&::-webkit-slider-thumb]:shadow-md
+                                        [&::-webkit-slider-thumb]:translate-y-[-7px]"/>
+                                    
+                                </div>
+                        
+                                <p class="text-sm text-gray-700 mt-2 flex gap-1">
+                                    <span class="iconify text-xl" data-icon="fluent:people-money-20-filled"></span>
+                                    <span id="selectedAmount" class="font-semibold">5</span> €
+                                </p>
+                                
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col mt-6">
+                            <h1>Punctuation rules</h1>
+
+                            <div class="flex gap-4 mt-2">
+
+                                <label class="flex-1 p-2 border border-gray-300 rounded-lg cursor-pointer transition-transform 
+                                transform hover:scale-105 flex items-center gap-2">
+                        
+                                    <input type="radio" name="selection" checked id="selection"
+                                    class="peer h-4 w-4 border border-gray-400 rounded-full" />
+
+                                    <div class="flex flex-col">
+                                        <div class="font-semibold text-sm flex items-center">
+                                            Stardard
+                                        </div>
+                                        <p class="text-gray-600 text-xs mt-1">
+                                            Punctuation is based on exact results, winner and draw.</p>
+                                    </div>
+
+                                    <span class="absolute top-0 left-0 w-full h-full rounded-lg opacity-0 peer-checked:opacity-20 
+                                    peer-checked:bg-gray-500 transition-all z-0"></span>
+
+                                </label>
+
+                                <label class="flex-1 p-2 border border-gray-300 rounded-lg cursor-pointer transition-transform 
+                                transform hover:scale-105 flex items-center gap-2">
+
+                                    <input type="radio" name="selection" id="selection"
+                                    class="peer h-4 w-4 border border-gray-400 rounded-full"/>
+
+                                    <div class="flex flex-col items-left">
+                                        <div class="font-semibold text-sm flex">
+                                            Amplified
+                                        </div>
+                                        <p class="text-gray-600 text-xs mt-1">
+                                            Punctuation is expanded and other guessings are punctuated too (number of goals, first goaler, goals difference, etc.)
+                                        </p>
+                                    </div>
+
+                                    <span class="absolute top-0 left-0 w-full h-full rounded-lg opacity-0 peer-checked:opacity-20 
+                                    peer-checked:bg-gray-500 transition-all z-0"></span>
+                                </label>
+
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col mt-6">
+                            <h1>Tie-breaking methods</h1>
+
+                            <div class="flex gap-4 mt-2">
+
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="tie" class="peer hidden" checked>
+
+                                    <div class="flex items-center rounded-full border px-4 py-2 peer-checked:bg-lime-300">
+                                        <span class="iconify" data-icon="fluent:alert-24-filled"></span>
+                                        <span>Report</span>
+                                    </div>
+                                </label>
+
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="tie" class="peer hidden">
+
+                                    <div class="flex items-center rounded-full border px-4 py-2 peer-checked:bg-lime-300">
+                                        <span class="iconify" data-icon="fluent:alert-24-filled"></span>
+                                        <span>Report</span>
+                                    </div>
+                                </label>
+
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="tie" class="peer hidden">
+
+                                    <div class="flex items-center rounded-full border px-4 py-2 peer-checked:bg-lime-300">
+                                        <span class="iconify" data-icon="fluent:alert-24-filled"></span>
+                                        <span>Report</span>
+                                    </div>
+                                </label>
+
+                            </div>
                         </div>
 
                     </div>
