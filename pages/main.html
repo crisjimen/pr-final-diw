@@ -214,8 +214,8 @@
                 </div>
 
                 <!--Pantalla de crear una nueva pool -->
-                <div class="create-pool hidden fixed top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/3 z-50 
-                w-220 p-6 px-8 bg-white shadow-lg rounded-lg shadow-sm flex flex-col">
+                <div class="create-pool hidden fixed top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/4 z-50 
+                w-220 p-6 px-8 bg-white shadow-lg rounded-lg shadow-sm flex flex-col max-h-[80vh] overflow-y-auto">
 
                     <div class="create-pool__title flex justify-between items-center border-b border-gray-400 pb-2 mt-2">
                         <h1 class="text-xl">Create new pool</h1>
@@ -225,7 +225,7 @@
                     <div class="create-pool__settings">
                         <h2 class="mt-2">Pool settings</h2>
 
-                        <div class="flex justify-between mt-2">
+                        <div class="flex justify-between mt-4">
 
                             <div class="flex flex-col">
                                 <label for="pool-name">
@@ -314,7 +314,7 @@
                         <div class="flex mt-6 flex-col">
                             <h1>Select a match</h1>
                             <select name="match" id="match" class="p-2 focus:outline-none border border-lime-300 rounded-sm
-                            text-sm text-gray-600">
+                            text-sm text-gray-600 mt-2">
                                 <option value="opt1">Choose an available match</option>
                                 <option value="opt2">Match #1</option>
                                 <option value="opt3">Match #2</option>
@@ -322,11 +322,146 @@
                             </select>
                         </div>
 
-                        
+                        <div class="flex mt-6 flex-col">
+                            <h1>Number of participants</h1>
 
+                            <div class="flex items-center gap-2 mt-2 flex-col">
+
+                                <div class="flex justify-between w-full text-sm">
+                                    <span class="text-gray-500">Min. 2</span>
+                                    <span class="text-gray-500">Max. 50</span>
+                                </div>
+                                 
+                                <!--El webkit edita la barra de rango-->
+                                <input id="participants" type="range" min="2" max="50" value="10"
+                                    class="w-full appearance-none bg-transparent rounded-lg py-1 cursor-pointer
+                                    [&::-webkit-slider-runnable-track]:bg-gray-200 [&::-webkit-slider-runnable-track]:h-2
+                                    flex align-center
+                                    [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-6 
+                                    [&::-webkit-slider-thumb]:h-6 [&::-webkit-slider-thumb]:bg-lime-300 
+                                    [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:border-1 
+                                    [&::-webkit-slider-thumb]:border-white [&::-webkit-slider-thumb]:shadow-md
+                                    [&::-webkit-slider-thumb]:translate-y-[-7px]"/>
+                                
+                            </div>
+                    
+                            <p class="text-sm text-gray-700 mt-2">
+                                Selected: <span id="selectedValue" class="font-semibold">10</span> participants
+                            </p>
+                            
+                        </div>
+
+                        <div class="flex mt-6 flex-col">
+                            <h1>Pool duration</h1>
+
+                            <div class="flex justify-around mt-2">
+
+                                <div class="flex flex-col text-sm">
+                                   <label for="dateStart">Start date</label>
+                                    <input type="datetime-local" name="dateStart" min="2025-03-01T00:00" id="dateStart"
+                                    class="px-3 py-2 rounded-sm w-60 border border-black"> 
+                                </div>
+                                
+                                <div class="flex flex-col text-sm">
+                                    <label for="dateEnd">End date</label>
+                                    <input type="datetime-local" name="dateEnd" id="dateEnd"
+                                    class="px-3 py-2 rounded-sm w-60 border border-black">
+                                </div>
+                                
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="create-pool__options"></div>
+                    <div class="create-pool__options flex flex-col">
+
+                        <h2 class="mt-2">Pool options</h2>
+
+                        <div class="flex flex-col mt-4 gap-2">
+                            <h1>Pool type</h1>
+
+                            <div class="flex gap-2">
+                                <label class="flex-1 p-3 border border-gray-300 rounded-lg cursor-pointer transition-transform 
+                                transform hover:scale-105 focus:outline-none">
+                                    <input type="radio" name="type" class="hidden peer" checked/>
+
+                                    <div class="flex flex-col items-left z-10">
+                                        <div class="font-semibold text-l flex gap-1">
+                                            <span class="iconify text-xl text-lime-400" data-icon="healthicons:high-bars"></span>
+                                            Proportional
+                                        </div>
+
+                                        <p class="text-gray-600 text-xs mt-1">
+                                            It is scored based on actual performance in the bet and accumulated points
+                                        </p>
+                                    </div>
+
+                                    <!--Cambia de fondo al seleccionarlo-->
+                                    <span class="absolute top-0 left-0 w-full h-full rounded-lg opacity-0 peer-checked:opacity-20 
+                                    peer-checked:bg-gray-500 transition-all z-0"></span>
+                                </label>
+
+                                <label class="flex-1 p-3 border border-gray-300 rounded-lg cursor-pointer transition-transform 
+                                    transform hover:scale-105 focus:outline-none">
+                                        <input type="radio" name="type" class="hidden peer"/>
+
+                                        <div class="flex flex-col items-left z-10">
+                                            <div class="font-semibold text-l flex gap-1">
+                                                <span class="iconify text-xl text-lime-400" data-icon="stash:trophy-solid"></span>
+                                                Top 3
+                                            </div>
+
+                                            <p class="text-gray-600 text-xs mt-1">
+                                                The total bet amount is distributed among the top 3 positions.
+                                            </p>
+                                        </div>
+
+                                        <!--Cambia de fondo al seleccionarlo-->
+                                        <span class="absolute top-0 left-0 w-full h-full rounded-lg opacity-0 peer-checked:opacity-20 
+                                        peer-checked:bg-gray-500 transition-all z-0"></span>
+                                </label>
+
+                                <label class="flex-1 p-3 border border-gray-300 rounded-lg cursor-pointer transition-transform 
+                                transform hover:scale-105 focus:outline-none">
+                                    <input type="radio" name="type" class="hidden peer"/>
+
+                                    <div class="flex flex-col items-left z-10">
+                                        <div class="font-semibold text-l flex gap-1">
+                                            <span class="iconify text-xl text-lime-400" data-icon="ix:mix"></span>
+                                            Hybrid
+                                        </div>
+                                        <p class="text-gray-600 text-xs mt-1">
+                                            Prize distribution is mixed between top 3, proportional and random (50%/30%/20%).
+                                        </p>
+                                    </div>
+
+                                    <!--Cambia de fondo al seleccionarlo-->
+                                    <span class="absolute top-0 left-0 w-full h-full rounded-lg opacity-0 peer-checked:opacity-20 
+                                    peer-checked:bg-gray-500 transition-all z-0"></span>
+                                </label>
+
+                                <label class="flex-1 p-3 border border-gray-300 rounded-lg cursor-pointer transition-transform 
+                                transform hover:scale-105 focus:outline-none">
+                                    <input type="radio" name="type" class="hidden peer"/>
+
+                                    <div class="flex flex-col items-left z-10">
+                                        <div class="font-semibold text-l flex gap-1">
+                                            <span class="iconify text-xl text-lime-400" data-icon="mdi:flame"></span>
+                                            Survival
+                                        </div>
+                                        <p class="text-gray-600 text-xs mt-1">
+                                            The first-place winner takes the entire amount of the bet.
+                                        </p>
+                                    </div>
+
+                                    <!--Cambia de fondo al seleccionarlo-->
+                                    <span class="absolute top-0 left-0 w-full h-full rounded-lg opacity-0 peer-checked:opacity-20 
+                                    peer-checked:bg-gray-500 transition-all z-0"></span>
+                                </label>
+                            </div>
+
+                        </div>
+
+                    </div>
 
 
                 </div>

@@ -32,3 +32,10 @@ overlay.addEventListener('click', () => {
     createPoolCard.classList.add('hidden');
     overlay.classList.add('hidden');
 });
+
+const slider = document.getElementById("participants");
+const selectedValue = document.getElementById("selectedValue");
+
+slider.addEventListener("input", function () {
+    selectedValue.textContent = slider.value;
+});
