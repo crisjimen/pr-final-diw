@@ -8,11 +8,12 @@ OneGoal es una plataforma de apuestas deportivas con desafíos personalizados, p
 - **Rankings y estadísticas**: Sube en la tabla de posiciones según tus puntos.
 - **Temporadas y Recompensas**: Gana premios según tu desempeño en la temporada.
 - **Interfaz moderna**: UI/UX optimizada para web y móvil.
+- **Última actualización -> asistente virtual**: Incluye un asistente para el análisis de apuestas y rendimiento.
 
 ---
 
 ## 🛠️ Tecnologías Utilizadas
-- **Frontend**: HTML, CSS y JavaScript
+- **Frontend**: HTML, CSS(estándar y TailwindCSS) y JavaScript
 
 ---
 
@@ -23,7 +24,8 @@ OneGoal es una plataforma de apuestas deportivas con desafíos personalizados, p
 ## ⚖️ Aviso
 
 Este proyecto es un software de código abierto con fines educativos.
-Todas las marcas registradas, logotipos, equipos, ligas y datos deportivos pertenecen a sus respectivos propietarios. 
+Todas las marcas registradas, logotipos, equipos, ligas y datos deportivos pertenecen a sus respectivos propietarios, 
+así como las tipografías u otros elementos visuales utilizados. 
 Este proyecto no está afiliado ni respaldado por ninguna organización deportiva, liga o entidad.
 
 ## 🏁 Instalación y Configuración
