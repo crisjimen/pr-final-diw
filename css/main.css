@@ -1671,4 +1671,8 @@ tbody{
     accent-color: var(--main-color);
 }
 
+.assistant{
+    font-family: 'Myanmar';
+}
+
 }
