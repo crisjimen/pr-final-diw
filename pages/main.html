@@ -218,12 +218,12 @@
                 w-220 p-6 px-8 bg-white shadow-lg rounded-lg shadow-sm flex flex-col max-h-[80vh] overflow-y-auto">
 
                     <div class="create-pool__title flex justify-between items-center border-b border-gray-400 pb-2 mt-2">
-                        <h1 class="text-xl">Create new pool</h1>
+                        <h1 class="text-2xl">Create new pool</h1>
                         <span id="close-card" data-icon="fontisto:close" class="iconify cursor-pointer text-xl text-lime-500"></span>
                     </div>
                     
                     <div class="create-pool__settings">
-                        <h2 class="mt-2">Pool settings</h2>
+                        <h2 class="mt-2 text-xl">Pool settings</h2>
 
                         <div class="flex justify-between mt-4">
 
@@ -373,9 +373,9 @@
                         </div>
                     </div>
 
-                    <div class="create-pool__options flex flex-col">
+                    <div class="create-pool__options flex flex-col mt-10 border-t border-gray-300">
 
-                        <h2 class="mt-2">Pool options</h2>
+                        <h2 class="mt-2 text-xl">Pool options</h2>
 
                         <div class="flex flex-col mt-4 gap-2">
                             <h1>Pool type</h1>
@@ -595,7 +595,7 @@
                     </div>
 
                     <div class="create-pool__button w-full flex justify-center mt-8">
-                        <button type="submit"
+                        <button type="submit" id="create-pool-button"
                         class="bg-lime-400 hover:bg-lime-500 text-white font-semibold py-2 px-12 rounded 
                         transition-all ease-in-out cursor-pointer ">
                             Create pool
@@ -608,6 +608,18 @@
                 <!--Capa de overlay cuando se muestra la tarjeta-->
                 <div id="overlay" class="hidden fixed inset-0 bg-transparent z-40 filter backdrop-blur"></div>
 
+                <!--Notificación de que se ha creado una nueva apuesta-->
+                <div class="alert fixed top-4 z-10 left-1/2 -translate-x-1/2 bg-white w-220 border-l-8 border-lime-400 pl-5 py-3
+                flex items-center shadow-sm shadow-gray-400 rounded-xs opacity-0 translate-y-[-100%] transition-all duration-500">
+
+                    <span class="iconify text-4xl text-lime-500" data-icon="lets-icons:check-fill"></span>
+                    <div class="flex flex-col ml-4">
+                        <p class="font-semibold m-0">Pool created</p>
+                        <p class="text-xs text-gray-500">Pool created successfully! Now you can start betting.</p>
+                    </div>
+                    <span class="iconify close-notification ml-auto cursor-pointer mr-6" data-icon="icon-park-outline:close"></span>
+                    
+                </div>
 
 
                 <div class="home__header">
