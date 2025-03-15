@@ -539,12 +539,12 @@ body{
     gap: 20px;
 }
 
-.match-desc h4{
+.match-desc h2{
     font-weight: 200;
     margin: 0;
 }
 
-.match-desc h5{
+.match-desc h3{
     color: var(--section-3);
     font-weight: 100;
     margin: 0;

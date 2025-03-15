@@ -77,11 +77,12 @@
                     <input type="text" class="flex-grow bg-transparent outline-none text-sm" 
                     placeholder="What do you want to ask Orbit?">
                     <span class="iconify text-gray-500 cursor-pointer bg-gray-200 p-2 text-lg rounded-full" 
-                    data-icon="fa6-solid:paper-plane"></span>
+                    data-icon="fa6-solid:paper-plane" title="Send"></span>
                 </div>
             </div>
 
             <video autoplay loop muted playsinline id="assistant-gif"
+                role="button" aria-label="Asistente virtual"
                 class="w-20 h-20 rounded-full shadow-lg cursor-pointer hover:scale-110 transition-transform ease-in-out z-60">
                 <source src="../img/581e6febb6f70aafb20b69eadb94eb3f.mp4" type="video/mp4">
             </video>
@@ -92,16 +93,16 @@
         <div class="main__sidebar">
 
             <div class="logo">
-                <img src="../img/Logo.png" alt="logo-img" class="logo-img">
+                <img src="../img/Logo.png" alt="Logo de OneGoal" class="logo-img">
             </div>
 
             <div class="user">
 
                 <div class="user__profile">
-                    <div class="user__profile-banner"></div>
+                    <div class="user__profile-banner" title="Banner del perfil"></div>
 
                     <div class="user__profile-picture">
-                        <img src="../img/UserIcon.svg" alt="profile-picture">
+                        <img src="../img/UserIcon.svg" alt="Foto de perfil">
                     </div>
 
                     <div class="user__profile-stats">
@@ -203,17 +204,17 @@
 
                 <div class="fav-teams__list">
                     <div class="fav-teams__list-item">
-                        <img src="../img/clubs/rm.svg" alt="club-icon" class="club-icon">
+                        <img src="../img/clubs/rm.svg" alt="Escudo del Real Madrid" class="club-icon">
                         <h4 class="club-name">REAL MADRID FC</h4>
                     </div>
 
                     <div class="fav-teams__list-item">
-                        <img src="../img/clubs/AC.svg" alt="club-icon" class="club-icon">
+                        <img src="../img/clubs/AC.svg" alt="Escudor del AC Milan" class="club-icon">
                         <h4 class="club-name">AC MILAN</h4>
                     </div>
 
                     <div class="fav-teams__list-item">
-                        <img src="../img/clubs/UBC.svg" alt="club-icon" class="club-icon">
+                        <img src="../img/clubs/UBC.svg" alt="Escudo de la UB Conquense" class="club-icon">
                         <h4 class="club-name">UB CONQUENSE</h4>
                     </div>
                 </div>
@@ -698,7 +699,7 @@
                 </div>
 
 
-                <div class="home__header">
+                <nav class="home__header">
                     <div class="home__header-links">
                         <ul>
                             <li><a href="#home">HOME</a></li>
@@ -712,21 +713,21 @@
 
 
                     <div class="home__header-icons">
-                        <span class="iconify" data-icon="iconamoon:notification"></span>
-                        <span class="iconify" data-icon="iconamoon:search"></span>
+                        <span class="iconify" data-icon="iconamoon:notification" title="Notifications"></span>
+                        <span class="iconify" data-icon="iconamoon:search" title="Search"></span>
                     </div>
-                </div>
+                </nav>
 
                 <div class="home__banner" id="home">
                     <div class="home__banner-header">
                         <div class="clubs">
 
                             <div class="crest">
-                                <img src="../img/clubs/rm-logo.png" alt="Real-Madrid-crest">
+                                <img src="../img/clubs/rm-logo.png" alt="Escudo del Real Madrid">
                             </div>
 
                             <div class="crest">
-                                <img src="../img/clubs/atm-logo.svg" alt="Atl-cres">
+                                <img src="../img/clubs/atm-logo.svg" alt="Escudo del Atlético de Madrid">
                             </div>
                         </div>
 
@@ -783,8 +784,8 @@
 
                             <div class="card-title">
                                 <div class="match-desc">
-                                    <h4>UEFA Champions League</h4>
-                                    <h5>League phase - Matchday 8</h5>
+                                    <h2>UEFA Champions League</h2>
+                                    <h3>League phase - Matchday 8</h3>
                                 </div>
 
                                 <div class="live-icon">
@@ -795,7 +796,7 @@
 
                             <div class="card-clubs">
                                 <div class="club">
-                                    <img src="../img/clubs/rm-logo.png" alt="rm-logo">
+                                    <img src="../img/clubs/rm-logo.png" alt="Escudo Real Madrid">
                                     <div class="club-name">
                                         <p>RMA</p>
                                         <h2>Real Madrid</h2>
@@ -855,8 +856,8 @@
 
                             <div class="card-title">
                                 <div class="match-desc">
-                                    <h4>UEFA Champions League</h4>
-                                    <h5>League phase - Matchday 8</h5>
+                                    <h2>UEFA Champions League</h2>
+                                    <h3>League phase - Matchday 8</h3>
                                 </div>
 
                                 <div class="live-icon">
@@ -927,8 +928,8 @@
 
                             <div class="card-title">
                                 <div class="match-desc">
-                                    <h4>UEFA Champions League</h4>
-                                    <h5>League phase - Matchday 8</h5>
+                                    <h2>UEFA Champions League</h2>
+                                    <h3>League phase - Matchday 8</h3>
                                 </div>
 
                                 <div class="live-icon">
