@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', () => {
+    
 window.onload = () => {
     const link = document.querySelector("a[href='register.html']");
     
@@ -96,5 +98,5 @@ btnRegister.addEventListener('click', (e) => {
     window.location.href = 'main.html';
 })
 
-
+});
 
