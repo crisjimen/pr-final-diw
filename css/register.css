@@ -189,6 +189,10 @@ body,html{
     gap: 10px;
 }
 
+.password-title{
+    list-style-type: none;
+}
+
 .gender-options input{
     accent-color: var(--main-color);
 }
