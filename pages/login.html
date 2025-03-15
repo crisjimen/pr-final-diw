@@ -10,16 +10,17 @@
 </head>
 <body>
 
-    <div class="cursor"></div>
+    <div class="cursor" aria-label="Animación que sigue al cursor del ratón"></div>
     <!--PAGINA DE LOGIN-->
     <div class="login">
 
         <div class="login__img">
             <img class="main-img" src="../img/Loginimg.png" 
-            alt="imagen-login"/>
+            alt="Imágen de la página de login del jugador Griezmann"/>
         </div>
 
-        <div class="login__green-frame">
+        <div class="login__green-frame"
+        aria-label="Elemento de separación verde de la página de login">
         </div>
 
         <div class="login__main">
@@ -29,22 +30,23 @@
                 <h2 class="title-2">Log in</h2>
                 <p class="welc-desc">Welcome back. Select a method to log in.</p>
 
-                <div class="login__main-form">
+                <form action="get" class="login__main-form">
 
                     <div class="login__main-buttons">
-                        <div>
-                            <i class="fa-brands fa-google"></i>
-                            <a href="https://www.google.com/">Log in with Google</a>
+                        <div title="Iniciar sesión con tu cuenta de google">
+                            <i class="fa-brands fa-google" aria-label="Icono de google"></i>
+                            <a href="https://www.google.com/" >Log in with Google</a>
                         </div>
                         
-                        <div>
-                            <i class="fa-brands fa-apple"></i>
+                        <div title="Iniciar sesión con tu cuenta de Apple">
+                            <i class="fa-brands fa-apple" aria-label="Icono de apple"></i>
                             <a href="https://www.apple.com">Log in with Apple</a>
                         </div>
                         
                     </div>
 
-                    <div class="login__main-or">
+                    <div class="login__main-or" 
+                    aria-label="Elemento de separación entre las diferentes formas de inicio de sesión">
                         <div class="line"></div>
                         <p>Or with email</p>
                         <div class="line"></div>
@@ -53,35 +55,38 @@
 
                     <div class="login__main-input">
                         <div class="input-container">
-                            <i class="fa-solid fa-envelope"></i>
-                            <input type="text" name="email" id="email" placeholder="Email">
+                            <i class="fa-solid fa-envelope" aria-label="Icono de email"></i>
+                            <input type="text" name="email" id="email" placeholder="Email" 
+                            aria-label="Input de email" required>
                         </div>
                         
                         <div class="input-container">
-                            <i class="fa-solid fa-key"></i>
-                            <input type="password" name="password" id="password" placeholder="Password">
+                            <i class="fa-solid fa-key" aria-label="Icono de contraseña"></i>
+                            <input type="password" name="password" id="password" 
+                            aria-label="Input de password" placeholder="Password" required>
                         </div>
                         
                     </div>
 
                     <div class="rem-passwd">
                         <div class="rem-group">
-                            <input type="checkbox" name="remember" id="remember">
+                            <input type="checkbox" name="remember" id="remember" aria-label="Marcar recordatorio de contraseña">
                             <label for="remember" class="remember-tag">Remember me</label>
                         </div>
 
-                        <a href="/" class="forgot">Forgot your password?</a>
+                        <a href="/" class="forgot" title="Recuperar contraseña">Forgot your password?</a>
                     </div>
 
                     <div class="login__main-button">
-                        <button class="btnLogin">Log in</button>
+                        <button class="btnLogin" aria-label="Botón de log in">Log in</button>
                     </div>
 
                     <div class="login__main-register">
                         <p>Don't have an account yet?</p>
-                        <a href="register.html" onclick="transition();">Sign up here</a>
+                        <a href="register.html" onclick="transition();"
+                        title="Ir a la página de registro">Sign up here</a>
                     </div>
-                </div>
+                </form>
         </div>
         </div>
 
