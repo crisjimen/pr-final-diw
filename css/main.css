@@ -443,24 +443,25 @@ body{
     gap: 15px;
 }
 
-.home__banner-footer p:first-of-type{
+.home__banner-footer h1{
     font-family: 'Lexend Exa';
     font-weight: 800;
     color: white;
     font-size: 15px;
 }
 
-.home__banner-footer h5{
+.home__banner-footer h2,
+.home__banner-footer h3{
     font-family: 'M PLUS 2';
     font-size: 20px;
     margin: 0.5% 0;
 }
 
-.home__banner-footer h5:nth-of-type(1){
+.home__banner-footer h2{
     font-weight: 800;
 }
 
-.home__banner-footer h5:nth-of-type(2){
+.home__banner-footer h3{
     font-weight: 500;
 }
 
@@ -774,7 +775,7 @@ body{
     border-radius: 10px 10px 0 0;
   }
 
-  .league-header.selected h4{
+  .league-header.selected h2{
     color: var(--section-2) !important;
   }
 
@@ -782,7 +783,7 @@ body{
     background-color: var(--section-4);
   }
 
-  .league-header h4{
+  .league-header h2{
     font-family: 'M PLUS 2';
     line-height: 1;
     font-size: 10px;
@@ -982,15 +983,16 @@ tbody{
     border-radius: 50%;
 }
 
-.pool-title h4{
+.pool-title h3{
     margin: 0;
     font-size: 14px;
     color: black;
     font-weight: 900;
 }
 
-.pool-title p{
+.pool-title h2{
     font-style: italic;
+    font-size: 10px;
 }
 
 .pool-title{
@@ -1200,13 +1202,14 @@ tbody{
     font-family: 'Myanmar';
     font-size: 12px;
     font-weight: 200;
+    gap: 20px;
 }
 
 .links ul{
    margin: 0;
 }
 
-.links h4{
+.links p{
     margin: 0;
 }
 
@@ -1451,7 +1454,11 @@ tbody{
     color: var(--main-color);
 }
 
-.condition-desc h5{
+.condition-desc{
+    font-size: 12px;
+}
+
+.condition-desc p{
     margin: 0.1em;
     font-size: 14px;
 }
@@ -1479,9 +1486,6 @@ tbody{
     gap: 10px;
 }
 
-.condition-desc{
-    font-size: 12px;
-}
 
 .pool-card-body{
     display: flex;
