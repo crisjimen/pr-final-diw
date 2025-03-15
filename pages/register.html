@@ -11,17 +11,17 @@
     
 </head>
 <body>
-    <div class="cursor"></div>
+    <div class="cursor" aria-label="Animación que sigue al cursor del ratón"></div>
 
     <div class="register">
 
         <div class="register__bg">
-            <img src="../img/Loginimg.png" alt="player-bg" class="bg-img">
+            <img src="../img/Loginimg.png" alt="Imágen de la página de register" class="bg-img">
         </div>
 
         <div class="register__logo">
             <img src="../img/iconoblackonegoal.png"
-             alt="onegoal-logo"
+             alt="Logo de OneGoal"
              class="logo">
         </div>
 
@@ -30,24 +30,25 @@
             <div class="main__title">
                 <h2>Register now</h2>
                 <h2 class="cmnty">Take part of the community.
-            Join the competence.
+                Join the competence.
                 </h2>
             </div>
 
             <div class="main__form">
 
-                <div class="form__sidebar">
+                <div class="form__sidebar" aria-label="Barra de navegación izquierda">
                     <h2 class="selected">Basic 
 Information</h2>
                     <h2>Personal 
 Identification</h2>
                     <h2>Security 
 & Payment</h2>
-                    <a href="login.html" class="back-link"><-- Back to login</a>
+                    <a href="login.html" class="back-link"
+                    title="Volver a la página de login"><-- Back to login</a>
                 </div>
 
                 <!--Primer form-->
-                <div class="form__main" >
+                <form class="form__main" >
 
                     <div class="form__main-basic">
                         <div class="form__main-title">
@@ -59,30 +60,30 @@ Identification</h2>
                             <div class="row">
                                 <div class="input-group">
                                     <label for="name">Name <span>*</span>:</label>
-                                    <input type="text" name="name" required>
+                                    <input type="text" name="name" id="name" required>
                                 </div>
 
                                 <div class="input-group">
                                     <label for="last-name">Last name/s: <span>*</span>:</label>
-                                    <input type="text" name="last-name" required>
+                                    <input type="text" name="last-name" id="last-name" required>
                                 </div>
                             </div>
                             
                             <div class="row">
                                 <div class="input-group">
-                                    <label for="bday">Birthday <span>*</span>:</label>
-                                    <input type="date" name="bday" required>
+                                    <label for="birthday">Birthday <span>*</span>:</label>
+                                    <input type="date" name="birthday" id="birthday" required>
                                 </div>
     
                                 <div class="input-group">
                                     <label for="phone-number">Phone Number: </label>
-                                    <input type="text" name="phone-number">
+                                    <input type="text" name="phone-number" id="phone-number">
                                 </div>
                             </div>
                             
                             <div class="form-group">
                                 <label>Gender <span>*</span>: </label>
-                                <div class="gender-options">
+                                <div class="gender-options" id="gender">
                                     <label><input type="radio" name="gender" value="male"> Male</label>
                                     <label><input type="radio" name="gender" value="female"> Female</label>
                                 </div>
@@ -100,21 +101,24 @@ Identification</h2>
 
                             <div class="row">
                                 <div class="input-group">
-                                    <label for="">Email* :</label>
-                                    <input type="email" name="email" placeholder="example@example.com">
+                                    <label for="email">Email* :</label>
+                                    <input type="email" name="email" id="email" placeholder="example@example.com">
                                 </div>
 
                                 <div class="input-group">
-                                    <label for="user">User name *:</label>
-                                    <input type="text" name="user" placeholder="Choose an available user name">
+                                    <label for="user-name">User name *:</label>
+                                    <input type="text" name="user-name" id="user-name"
+                                    placeholder="Choose an available user name">
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="input-group">
-                                    <label for="psswd">Password <span>*</span>:</label>
-                                    <input type="password" name="psswd">
-                                    <ul class="password-rules">
+                                    <label for="password">Password <span>*</span>:</label>
+                                    <input type="password" name="password" id="password">
+
+                                    <ul class="password-rules"
+                                    aria-label="Requerimientos de la contraseña">
                                         Must have:
                                         <li>Min. 1 capital letter.</li>
                                         <li>Min. 1 special character</li>
@@ -124,8 +128,8 @@ Identification</h2>
                                 </div>
 
                                 <div class="input-group">
-                                    <label for="rpasswd">Repeat password <span>*</span>:</label>
-                                    <input type="password" name="rpsswd">
+                                    <label for="repeat-password">Repeat password <span>*</span>:</label>
+                                    <input type="password" name="repeat-password" id="repeat-password">
 
                                     <div class="btnNext">
                                         <button>Next</button>
@@ -135,10 +139,10 @@ Identification</h2>
                                   
                         </div>
                     </div>
-                </div>
+                </form>
 
                 <!--Segundo form-->
-                <div class="form__main" style="display: none;">
+                <form class="form__main" style="display: none;">
 
                     <div class="form__main-basic">
                         <div class="form__main-title">
@@ -150,7 +154,7 @@ Identification</h2>
                             <div class="row">
                                 <div class="input-group">
                                     <label for="id">Identification Type <span>*</span>:</label>
-                                    <select name="id">
+                                    <select name="id" id="id">
                                         <option value="dni">DNI</option>
                                         <option value="nif">NIF</option>
                                     </select>
@@ -166,8 +170,8 @@ Identification</h2>
                             
                             <div class="row">
                                 <div class="input-group">
-                                    <label for="idnum">Identification Number: <span>*</span>:</label>
-                                    <input type="text" name="idnum">
+                                    <label for="id-number">Identification Number: <span>*</span>:</label>
+                                    <input type="text" name="idnum" id="id-number">
                                 </div>
                             </div>
                             
@@ -185,7 +189,7 @@ Identification</h2>
                             <div class="row">
                                 <div class="input-group">
                                     <label for="country">Country <span>*</span> :</label>
-                                    <select name="country">
+                                    <select name="country" id="country">
                                         <option value="Spain" selected></option>
                                         <option value="France">France</option>
                                         <option value="UK">UK</option>
@@ -195,19 +199,20 @@ Identification</h2>
 
                                 <div class="input-group">
                                     <label for="city">City <span>*</span>:</label>
-                                    <input type="text" name="city">
+                                    <input type="text" name="city" id="city">
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="input-group">
-                                    <label for="addr">Address <span>*</span>:</label>
-                                    <input type="text" name="addr" placeholder="Street, Apt./Unit">
+                                    <label for="address">Address <span>*</span>:</label>
+                                    <input type="text" name="address" 
+                                    id="address" placeholder="Street, Apt./Unit">
                                 </div>
 
                                 <div class="input-group">
                                     <label for="postcode">Postcode <span>*</span>:</label>
-                                    <input type="text" name="postcode">
+                                    <input type="text" name="postcode" id="postcode">
 
                                     <div class="btnNext" id="btn2">
                                         <button>Next</button>
@@ -217,10 +222,10 @@ Identification</h2>
                                   
                         </div>
                     </div>
-                </div>
+                </form>
 
                 <!--Tercer form-->
-                <div class="form__main" style="display: none;">
+                <form class="form__main" style="display: none;">
 
                     <div class="form__main-basic">
                         <div class="form__main-title">
@@ -268,17 +273,17 @@ Identification</h2>
                                <p>Complete the last steps and start enjoying <span>OneGoal</span>!</p>
                                 <div class="checkgroup">
                                     <label for="t&c"><b>Accept<span> Terms & Conditions</span></b> - Review and agree our platform’s policies</label>
-                                    <input type="checkbox" name="t&c" required>
+                                    <input type="checkbox" name="t&c" id="t&c" required>
                                 </div>
 
                                 <div class="checkgroup">
-                                    <label for="resp"><b>Responsible <span>Gaming Commitment</span></b> - Confirm our awareness of responsible gaming practices</label>
-                                    <input type="checkbox" name="resp" required>
+                                    <label for="responsible"><b>Responsible <span>Gaming Commitment</span></b> - Confirm our awareness of responsible gaming practices</label>
+                                    <input type="checkbox" name="resp" id="responsible" required>
                                 </div>
 
                                 <div class="checkgroup">
-                                    <label for="nws"><b>Subscribe to our <span>newsletter</span></b> - To receive the new promotions (optional)</label>
-                                    <input type="checkbox" name="nws">
+                                    <label for="newsletter"><b>Subscribe to our <span>newsletter</span></b> - To receive the new promotions (optional)</label>
+                                    <input type="checkbox" name="nws" id="newsletter">
                                 </div>
 
                                 <input type="submit" value="Register" class="btnRegister">
@@ -286,7 +291,7 @@ Identification</h2>
                                   
                         </div>
                     </div>
-                </div>
+                </form>
 
             </div>
 
